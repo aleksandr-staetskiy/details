@@ -1,5 +1,5 @@
 /* COLORS */
-$gray:            			#ABABAB;
+$gray:            			#2d2a2a;
 $black:					    #000000;
 $blackLight:				rgba($black, 0.04);
 $hinted:				    rgba($black, 0.32);
@@ -11,13 +11,13 @@ $colorHideLight3:			#69A0F6;
 
 $colorPanel:                #284159;
 
-$colorBackground:           #284159;
+$colorBackground:           #f4f0f0;
 
 $colorError:                #F15866;
 
 $colorBorder:               rgba($black, 0.16);
 
-$colorFont:				    rgba($black, 0.90);
+$colorFont:				    #000000;
 $colorFontInverted:		    rgba($white, 0.90);
 
 $colorLink:             	$colorHideLight;
@@ -32,7 +32,7 @@ $fontSizeSecondary:			1.2rem;
 $fontSizeH1:                2.8rem;
 $fontSizeH2:                2rem;
 $fontSizeH3:                1.8rem;
-$fontFamily:				'Open Sans', sans-serif;
+$fontFamily:				'Clear Sans';
 $fontRegular:				400;
 $fontSemibold:				600;
 

@@ -1,0 +1,47 @@
+.page-header {
+
+  &__container {
+    @include container;
+  }
+
+  &__inner {
+    display: flex;
+  }
+
+  &__bar {
+    width: 100%;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__address {
+    font-size: 1.3rem;
+    display: block;
+    width: 98px;
+  }
+
+  &__street {
+    font-size: 1.3rem;
+    display: block;
+    width: 120px;
+  }
+
+  &__phone {
+    color: $black;
+    font-size: 1.9rem;
+
+    &:hover {
+      text-decoration: none;
+      color: rgba(0, 0, 0, 0.904);
+    }
+  }
+}

@@ -6,60 +6,19 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Вёрстка проекта</title>
-    <style>
-        html {
-            font-size: 10px;
-            line-height: 1.3em;
-        }
-
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-        }
-
-        .wrapper {
-            padding: 30px;
-        }
-
-        h1 {
-            color: #333;
-            font-size: 3rem;
-        }
-
-        ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        li {
-            padding: 10px 0;
-        }
-
-        a {
-            color: #333;
-            text-decoration: underline;
-            transition: all .25s ease-out;
-            font-size: 1.6rem;
-        }
-
-        a:hover {
-            color: #2962ff;
-            text-decoration: none;
-        }
-    </style>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
-
-    <div class="wrapper">
-        <header class="page-header">
-            <div class="page-header__container">
-                <div class="page-header__inner">
-                    <a href="" class="logo">
-                        <img src="" alt="" class="logo__icon">
-                        <sapn class="logo__descr">Запасные части для автоматических трансмиссий</sapn>
-                    </a>
-                    <div class="page-header__bar">
+    <header class="page-header">
+        <div class="page-header__container">
+            <div class="page-header__inner">
+                <a href="" class="logo">
+                    <img src="" alt="" class="logo__icon">
+                    <sapn class="logo__descr">Запасные части для автоматических трансмиссий</sapn>
+                </a>
+                <div class="page-header__bar">
+                    <div class="page-header__top">
                         <nav class="page-nav">
                             <ul class="page-nav__list">
                                 <li class="page-nav__list-item"><a href="" class="page-nav__list-link">Каталог</a></li>
@@ -69,24 +28,48 @@
                                 <li class="page-nav__list-item"><a href="" class="page-nav__list-link">Новости</a></li>
                             </ul>
                         </nav>
+                        <span class="page-header__street">Старо-Петергофский пр, д. 20, к. 3</span>
+                        <span class="page-header__address">1-й Верхний переулок, д.10</span>
+                        <a href="tel:+78129624200" class="page-header__phone">+7 (812) 962-42-00</a>
                     </div>
+
+                    <div class="page-header__bottom">
+
+                        <div class="search">
+                            <input type="text" class="search__input search__btn">
+                            <button class="btn"> найти </button>
+                        </div>
+
+                        <div class="page-header__cart">
+                            <img src="" alt="" class="page-header__cart-icon">
+                            <div class="page-header__cart-info">
+                                <span class="page-header__cart-title">Корзина</span>
+                                <div class="page-header__cart-amount">7 шт.</div>
+                                <span class="page-header__cart-price">15 280 р</span>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-        </header>
-        <h1>Страницы</h1>
+        </div>
+    </header>
 
-        <ul>
-            <li>
-                <a href="/home.html">Главная страница</a>
-            </li>
-            <li>
-                <a href="/404.html">404</a>
-            </li>
-            <li>
-                <a href="/components.html">Компоненты UI-KIT</a>
-            </li>
-        </ul>
-    </div>
+
+
+    <h1>Страницы</h1>
+
+    <ul>
+        <li>
+            <a href="/home.html">Главная страница</a>
+        </li>
+        <li>
+            <a href="/404.html">404</a>
+        </li>
+        <li>
+            <a href="/components.html">Компоненты UI-KIT</a>
+        </li>
+    </ul>
 </body>
 
 </html>
