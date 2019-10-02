@@ -17,13 +17,17 @@
 // Теги по умолчанию
 @import "./global-tags";
 
+// Кнопки
+@import "../../components/btn/btn";
+
 // Шапка
 @import "../../blocks/header/main_header";
 
 // Логотип
 @import "../../components/logo/logo";
 
-// Кнопки
+// Поиск
+@import "../../components/search/search";
 
 // Формы
 
