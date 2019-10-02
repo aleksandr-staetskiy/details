@@ -1,0 +1,25 @@
+.catalogue {
+
+  &__main-title {
+    color: $colorTitle;
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+  &__categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    &-item {
+      display: flex;
+      flex-basis: 1;
+      margin: 10px;
+    }
+
+    &-txt {
+      margin-left: 24px;
+    }
+  }
+}
