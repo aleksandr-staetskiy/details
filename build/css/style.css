@@ -703,6 +703,15 @@ a:hover {
   text-align: center;
 }
 
+.catalogue__sub-title {
+  color: #433f3f;
+  margin-top: 5rem;
+  margin-bottom: 0.3rem;
+  font-size: 2.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
 .catalogue__categories {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -724,6 +733,44 @@ a:hover {
 
 .catalogue__categories-txt {
   margin-left: 24px;
+}
+
+.catalogue__unit {
+  margin-top: 4rem;
+}
+
+.catalogue__unit-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+.catalogue__list {
+  -webkit-columns: 5;
+     -moz-columns: 5;
+          columns: 5;
+  list-style-type: none;
+  padding: 0;
+  padding-top: 20px;
+  border-top: 1px solid #f3f3f3;
+}
+
+.catalogue__list-link {
+  display: inline-block;
+  color: #000000;
+  margin-top: 18px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(222, 222, 222, 0.66);
+  background-color: #ffffff;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.catalogue__list-link:hover {
+  text-decoration: none;
+  color: #f69b2a;
+  border: 1px solid #f69b2a;
 }
 
 /*# sourceMappingURL=app.css.map */

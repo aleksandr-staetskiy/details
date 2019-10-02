@@ -7,6 +7,15 @@
     text-align: center;
   }
 
+  &__sub-title {
+    color: $colorTitle;
+    margin-top: 5rem;
+    margin-bottom: 0.3rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
   &__categories {
     display: flex;
     flex-wrap: wrap;
@@ -22,4 +31,37 @@
       margin-left: 24px;
     }
   }
+
+  &__unit {
+    margin-top: 4rem;
+    &-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+    }
+  }
+
+  &__list {
+    columns: 5;
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px;
+    border-top: 1px solid #f3f3f3;
+
+    &-link {
+      display: inline-block;
+      color: $black;
+      margin-top: 18px;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid rgba(222, 222, 222, 0.66);
+      background-color: #ffffff;
+      transition: .3s ease;
+      &:hover {
+        text-decoration: none;
+        color: $colorPrimery;
+        border: 1px solid $colorPrimery;
+      }
+    }
+  }
+
 }
