@@ -247,6 +247,68 @@ a:hover {
   display: block;
 }
 
+.main {
+  margin-top: 50px;
+}
+
+.main__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .main__container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .main__container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .main__container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .main__container {
+    max-width: 1140px;
+  }
+}
+
+.main__content {
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+  background-color: #ffffff;
+}
+
+.main__content::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  width: 94%;
+  margin: 0 auto;
+  height: 5px;
+  border-radius: 10px;
+  border: 1px solid #ececec;
+  background-color: #fbf8f8;
+}
+
 .btn {
   display: block;
   color: #ffffff;
