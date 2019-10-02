@@ -195,8 +195,8 @@ html {
 }
 
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -205,7 +205,6 @@ body {
   line-height: 1.4em;
   color: #000000;
   background-color: #f4f0f0;
-  min-width: 1280px;
 }
 
 h1 {
@@ -266,6 +265,9 @@ a:hover {
 }
 
 .page-header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -451,6 +453,72 @@ a:hover {
 .search__btn {
   width: 135px;
   height: 100%;
+}
+
+.advantages {
+  margin-top: 45px;
+}
+
+.advantages__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .advantages__container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantages__container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .advantages__container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .advantages__container {
+    max-width: 1140px;
+  }
+}
+
+.advantages__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc(33% - 30px);
+      flex-basis: calc(33% - 30px);
+}
+
+.advantages__descr {
+  color: #2d2a2a;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 0;
+  margin-left: 20px;
 }
 
 .page-nav__list {
