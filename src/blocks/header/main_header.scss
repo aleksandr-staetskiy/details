@@ -82,4 +82,36 @@
       display: inline-block;
     }
   }
+
+  @media (max-width: 1000px) {
+    &__address {
+      display: none;
+    }
+  
+    &__street {
+     display: none;
+    }
+
+    &__cart-info{
+      display: none;
+    }
+
+    &__bar {
+      flex-direction: row;
+    }
+
+    &__top {
+     order: 2
+    }
+  
+    &__bottom {
+      order: 1;
+    }
+
+    &__phone {
+      white-space: nowrap;
+      font-size: 1.5rem;
+    }
+
+  }
 }

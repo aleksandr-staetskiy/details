@@ -22,4 +22,15 @@
          text-decoration: none;
       }
    }
+
+   @media (max-width: 1000px) {
+      &__descr {
+       display: none;
+      }
+
+      &__icon {
+         width: 45px;
+         height: 45px;
+      }
+    }
 }

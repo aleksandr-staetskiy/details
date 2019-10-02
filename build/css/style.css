@@ -253,9 +253,6 @@ a:hover {
 
 .main__container {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -283,7 +280,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .main__container {
-    max-width: 1140px;
+    max-width: 1260px;
   }
 }
 
@@ -368,15 +365,18 @@ a:hover {
   border-bottom: 4px solid black;
 }
 
+@media (max-width: 1000px) {
+  .page-nav {
+    display: none;
+  }
+}
+
 .page-header {
   overflow: hidden;
   padding-top: 10px;
 }
 
 .page-header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -404,7 +404,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .page-header__container {
-    max-width: 1140px;
+    max-width: 1260px;
   }
 }
 
@@ -506,6 +506,38 @@ a:hover {
   display: inline-block;
 }
 
+@media (max-width: 1000px) {
+  .page-header__address {
+    display: none;
+  }
+  .page-header__street {
+    display: none;
+  }
+  .page-header__cart-info {
+    display: none;
+  }
+  .page-header__bar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .page-header__top {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .page-header__bottom {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .page-header__phone {
+    white-space: nowrap;
+    font-size: 1.5rem;
+  }
+}
+
 .logo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -538,6 +570,16 @@ a:hover {
   text-decoration: none;
 }
 
+@media (max-width: 1000px) {
+  .logo__descr {
+    display: none;
+  }
+  .logo__icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
 .search {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -564,14 +606,18 @@ a:hover {
   height: 100%;
 }
 
+@media (max-width: 1000px) {
+  .search {
+    max-width: 320px;
+    height: 40px;
+  }
+}
+
 .advantages {
   margin-top: 45px;
 }
 
 .advantages__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -599,7 +645,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .advantages__container {
-    max-width: 1140px;
+    max-width: 1260px;
   }
 }
 
@@ -635,9 +681,6 @@ a:hover {
 }
 
 .advantages__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -665,7 +708,7 @@ a:hover {
 
 @media (min-width: 1200px) {
   .advantages__container {
-    max-width: 1140px;
+    max-width: 1260px;
   }
 }
 
