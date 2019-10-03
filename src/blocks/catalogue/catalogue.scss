@@ -99,4 +99,41 @@
     }
   }
 
+  @media (max-width: $screen-md) {
+    &__categories {
+      justify-content: space-between;
+       &-item {
+        align-items: center;
+        width: calc(49.999% - 25px);
+        margin: 0px;
+        margin-top: 15px;
+      }
+      &-txt {
+        margin-left: 15px;
+      }
+    }
+
+    &__list {
+      columns: 2;
+    }
+   
+  }
+
+  @media (max-width: $screen-xs) {
+    &__categories {
+      justify-content: space-between;
+       &-item {
+        width: calc(100% - 25px);
+      }
+      &-txt {
+        margin-left: 15px;
+      }
+    }
+
+    &__list {
+      columns: 1;
+    }
+   
+  }
+
 }

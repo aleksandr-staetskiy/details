@@ -29,4 +29,19 @@
       margin-left: 15px;
     }
   }
+
+  @media (max-width: $screen-md) {
+    &__item {
+      margin-top: 20px;
+      flex-basis: calc(100% - 20px)
+    }
+
+    &__descr {
+      line-height: 26px;
+    }
+
+    &__icon {
+      margin-top: 10px;
+    }
+  }
 }

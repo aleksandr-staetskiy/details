@@ -27,4 +27,22 @@
     }
   }
 
+  @media (max-width: $screen-sm) {
+
+    &{
+      top: 85px;
+      left: 15px;
+      right: 15px;
+      position: absolute;
+      min-width: 90%;
+    }
+
+    &__input {
+     &::placeholder {
+       font-size: 1.2rem;
+     }
+    }
+
+  }
+
 }

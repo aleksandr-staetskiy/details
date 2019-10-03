@@ -122,6 +122,33 @@
       margin-top: 10px;
       margin-left: 10px;
     }
+  }
+
+  @media (max-width: $screen-sm) {
+
+    &__top {
+      order: 1;
+     }
+   
+     &__bottom {
+       order: 2;
+     }
+
+     &__bar {
+      flex-direction: column;
+    }
+
+    &__cart {
+      position: absolute;
+      right: 10px;
+      top: 30px;
+    }
+
+    &__phone {
+      position: absolute;
+      right: 20%;
+      top: 30px;
+    }
 
   }
 }
