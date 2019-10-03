@@ -28,7 +28,11 @@
     }
 
     &-txt {
+      color: $blackLight;
+      font-size: 1.4em;
       margin-left: 24px;
+      text-decoration: underline;
+      text-decoration-color: rgba(0, 0, 0, 0.308);
     }
   }
 
@@ -60,6 +64,37 @@
         text-decoration: none;
         color: $colorPrimery;
         border: 1px solid $colorPrimery;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+
+    &__categories {
+      justify-content: flex-start;
+
+      &-item {
+        align-items: center;
+        width: calc(33% - 10px);
+        margin: 5px;
+      }
+
+      &-icon {
+        width: 50px;
+        height: 50px;
+      }
+
+      &-txt {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__list {
+      columns: 3;
+  
+      &-link {
+        margin-top: 12px;
+        padding: 6px;
       }
     }
   }

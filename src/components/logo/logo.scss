@@ -24,6 +24,12 @@
    }
 
    @media (max-width: 1000px) {
+
+      &{
+         width: 68px;
+         margin-top: 20px;
+      }
+
       &__descr {
        display: none;
       }

@@ -1,0 +1,138 @@
+.burger {
+  display: block;
+  width: 25px;
+  height: 30px;
+  border: none;
+  margin-top: 27px;
+  margin-right: 20px;
+  padding: 0;
+  line-height: 30px;
+  background: transparent;
+  user-select: none;
+  cursor: pointer;
+  z-index: 150;
+
+  > span { // stylelint-disable-line  selector-combinator-blacklist
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: $toggler-part-height;
+    vertical-align: middle;
+    font-size: 0;
+    color: transparent;
+    background: $blackLight;
+    transition: background $transition-time $transition-time;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: $toggler-part-height;
+      background: $blackLight;
+      transform-origin: 50% 50%;
+      transition: top $transition-time $transition-time, transform $transition-time;
+    }
+
+    &:before {
+      top: -10px;
+    }
+
+    &:after {
+      top: 10px;
+    }
+  }
+
+  &--close {
+
+    > span { // stylelint-disable-line  selector-combinator-blacklist
+      transition: background $transition-time 0s;
+      background: transparent;
+
+      &:before,
+      &:after {
+        top: 0;
+        transition: top $transition-time, transform $transition-time $transition-time;
+      }
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
+    }
+  }
+
+  &-overlay {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 35px;
+    padding-top: 40%;
+    z-index: 15;
+    animation: slide-bottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+    &--active {
+      display: block;
+    }
+
+    &__submenu {
+      &-link {
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+
+    &__menu {
+      list-style: none;
+      padding: 0;
+
+      &-link {
+        color: #fff;
+        font-size: 32px;
+
+        &:hover {
+          color: rgb(240, 240, 240);
+        }
+      }
+    }
+
+    &__submenu {
+      &-list{
+        display: none;
+        list-style: none;
+        transition: 0.6s ease;
+        padding: 0;
+
+        &.active {
+          display: block;
+        }
+      }
+
+      &-item{
+        color: #fff;
+        margin-top: 5px;
+      }
+    }
+
+  }
+
+  @keyframes slide-bottom {
+    0% {
+      -webkit-transform: translateX(-700px);
+              transform: translateX(-700px);
+    }
+    100% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+    }
+  }
+
+
+}
