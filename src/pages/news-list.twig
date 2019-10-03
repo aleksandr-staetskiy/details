@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Новости</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	 {% include '../blocks/header/main_header.twig' %}
+
+
+	<main class="main">
+		<div class="main__container">
+			<div class="main__content">
+        <section class="news-list">
+          <h1 class="news-list__section-title">Новости</h1>
+
+          <div class="grid">
+           {% include "../blocks/news-list/news-list-card.twig" with {
+             date: "08 авг. 2018 г.",
+             title: "Запчасти для трансмисий",
+             descr: "Самые лучшие запчасти по выгодной цене",
+             img: "news-img"
+           } %}
+          </div>
+        </section>
+			</div>
+		</div>
+	</main>
+
+		
+</body>
+
+</html>
+
+
