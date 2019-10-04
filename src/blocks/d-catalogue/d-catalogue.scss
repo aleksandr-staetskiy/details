@@ -1,0 +1,40 @@
+.d-catalogue {
+
+  &__header {
+    display: flex;
+    align-items: center;
+  }
+
+  &__btn {
+    color: $colorTitle;
+    display: flex;
+    align-items: center;
+    height: auto;
+    margin-left: auto;
+    padding: 15px;
+    font-size: 1.8rem;
+    border-radius: 7px;
+    background-color: #f4f0f0;
+    &-txt {
+      margin-left: 8px;
+    }
+  }
+
+  &__name {
+    color: #2d2a2a;
+    font-family: 'Clear Sans Bold';
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin: 0;
+
+  }
+
+  &__amount {
+    color: #433f3f;
+    margin-left: 5px;
+    margin-top: 7px;
+    font-size: 2rem;
+    font-weight: 700;
+    opacity: 0.6;
+  }
+}

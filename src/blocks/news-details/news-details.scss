@@ -2,19 +2,6 @@
   max-width: 723px;
   margin: 0 auto; 
 
-  &__return {
-    color: #433f3f;
-    font-size: 1.4rem;
-    font-weight: 600;
-    opacity: 0.6;
-    transition: .3s ease;
-    &:hover {
-     color: #433f3f;
-     text-decoration: none;
-     opacity: 0.5;
-    }
-  }
-
   &__main-title {
     color: $gray;
     font-size: 3.2rem;
