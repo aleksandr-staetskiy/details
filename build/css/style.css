@@ -1446,6 +1446,12 @@ img {
   }
 }
 
+.news-list__section-title {
+  color: #2d2a2a;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
 .news-list__card {
   margin-bottom: 40px;
 }
@@ -1457,12 +1463,24 @@ img {
 
 .news-list__title {
   margin: 0;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .news-list__descr {
   font-size: 1.6rem;
+}
+
+@media (max-width: 768px) {
+  .news-list__date {
+    font-size: 1.4rem;
+  }
+  .news-list__title {
+    font-size: 1.8rem;
+  }
+  .news-list__descr {
+    font-size: 1.4rem;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

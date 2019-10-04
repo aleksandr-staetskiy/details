@@ -1,4 +1,10 @@
 .news-list {
+
+  &__section-title {
+    color: $blackLight;
+    font-size: 3.2rem;
+    font-weight: 700;
+  }
   
   &__card {
     margin-bottom: 40px;
@@ -11,11 +17,25 @@
 
   &__title {
     margin: 0;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
   }
 
   &__descr {
     font-size: 1.6rem;
+  }
+
+  @media (max-width: $screen-md) {
+    &__date {
+      font-size: 1.4rem;
+    }
+
+    &__title {
+      font-size: 1.8rem;
+    }
+
+    &__descr {
+      font-size: 1.4rem;
+    }
   }
 }
