@@ -82,9 +82,14 @@
              title: "Запчасти для трансмисий",
              descr: "Самые лучшие запчасти по выгодной цене",
              img: "news-img-3"
-           } %}
+           } %}				 
+          </div>
 
-					 
+          <div class="news-list__buttons-group">
+            {% include "../components/btn/btn.twig" with {
+              add_classes: "news-list__btn",
+              text: "Показать ещё",
+            } %}
           </div>
         </section>
 			</div>

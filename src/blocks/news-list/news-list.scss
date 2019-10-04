@@ -26,6 +26,22 @@
     font-size: 1.6rem;
   }
 
+  &__buttons-group {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__btn {
+    color: #433f3f;
+    height: auto;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.2px;
+    border-radius: 5px;
+    border: 1px solid rgba(222, 222, 222, 0.66);
+    background: transparent;
+  }
+
   @media (max-width: $screen-md) {
     &__date {
       font-size: 1.4rem;
@@ -38,6 +54,12 @@
 
     &__descr {
       font-size: 1.4rem;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &__btn {
+      width: 100%;
     }
   }
 }

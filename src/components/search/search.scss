@@ -18,6 +18,9 @@
   &__btn {
     width: 135px;
     height: 100%;
+    text-shadow: 1px 2px 0 #e3840e;
+    border: none;
+    border-radius: 0 7px 7px 0;
   }
 
   @media (max-width: 1000px) {
