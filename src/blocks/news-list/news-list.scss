@@ -1,0 +1,21 @@
+.news-list {
+  
+  &__card {
+    margin-bottom: 40px;
+  }
+
+  &__date {
+    color: #433f3f;
+    font-size: 1.6rem;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+
+  &__descr {
+    font-size: 1.6rem;
+  }
+}

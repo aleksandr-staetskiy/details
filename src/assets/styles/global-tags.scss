@@ -93,4 +93,10 @@ img {
             background-color: #fbf8f8;
         }
     }
+
+    @media (max-width: $screen-md) {
+        & {
+            margin-top: 80px;
+        }
+    }
 }
