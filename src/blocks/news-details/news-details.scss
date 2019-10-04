@@ -1,0 +1,44 @@
+.news-details {
+  max-width: 723px;
+  margin: 0 auto; 
+
+  &__return {
+    color: #433f3f;
+    font-size: 1.4rem;
+    font-weight: 600;
+    opacity: 0.6;
+    transition: .3s ease;
+    &:hover {
+     color: #433f3f;
+     text-decoration: none;
+     opacity: 0.5;
+    }
+  }
+
+  &__main-title {
+    color: $gray;
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: 'Clear Sans Bold';
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  &__date {
+    color: $black;
+    font-family: "Clear Sans";
+    font-size: 16px;
+    font-weight: 700;
+    opacity: 0.6;
+  }
+
+  &__header {
+    margin-bottom: 25px;
+  }
+
+  p {
+    color: #433f3f;
+    font-size: 1.6rem;
+  }
+}
