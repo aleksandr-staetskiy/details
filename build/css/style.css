@@ -1651,6 +1651,10 @@ img {
   display: none;
 }
 
+.d-catalogue__accordion-visible {
+  cursor: pointer;
+}
+
 .d-catalogue__accordion-visible.active + .d-catalogue__accordion-hidden {
   display: block;
 }

@@ -62,6 +62,7 @@
     }
 
     &-visible {
+      cursor: pointer;
       &.active + .d-catalogue__accordion-hidden {
         display: block;
       }
