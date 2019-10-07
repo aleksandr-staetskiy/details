@@ -1621,4 +1621,234 @@ img {
   opacity: 0.6;
 }
 
+.d-catalogue__accordion {
+  margin-top: 60px;
+}
+
+.d-catalogue__accordion-visible {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.d-catalogue__accordion-visible::after {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 45px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 8.5px 15px 8.5px;
+  border-color: transparent transparent #c9c9c9 transparent;
+}
+
+.d-catalogue__accordion-title {
+  color: #433f3f;
+  margin: 0;
+  margin-left: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.d-catalogue__accordion-amount {
+  display: block;
+  color: #433f3f;
+  margin-left: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  opacity: 0.6;
+}
+
+.product__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__head {
+  color: #433f3f;
+  font-size: 1.4rem;
+  opacity: 0.6;
+}
+
+.product__btn {
+  color: #433f3f;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  background: #ffffff;
+}
+
+.field-num {
+  display: block;
+  margin-bottom: 1.8em;
+}
+
+.field-num__input-wrap {
+  position: relative;
+  display: block;
+  width: 120px;
+}
+
+.field-num__input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  margin: 0;
+  border: none;
+  border-radius: 6px;
+  padding: 14px 45px;
+  line-height: 1.2;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: center;
+  background-color: #fff;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+  appearance: textfield;
+}
+
+.field-num__input:focus,
+button:focus ~ .field-num__input {
+  outline: none;
+  border-color: #2f75ec;
+}
+
+.field-num__input[disabled], .field-num__input[readonly] {
+  cursor: not-allowed;
+  background-color: #fafafa;
+}
+
+.field-num__input::-webkit-input-placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.field-num__input::-ms-input-placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.field-num__input::-moz-placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.field-num__input:-ms-input-placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.field-num__input::placeholder {
+  color: #bfbfbf;
+  opacity: 1;
+}
+
+.field-num__btn-plus {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  right: 1px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  background: transparent;
+}
+
+.field-num__btn-plus:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.field-num__btn-plus:focus {
+  outline: none;
+}
+
+.field-num__btn-minus {
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: 1px;
+  width: 40px;
+  border: none;
+  padding: 0;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  background: transparent;
+}
+
+.field-num__btn-minus:hover {
+  background-color: #e5e5e5;
+  cursor: pointer;
+}
+
+.field-num__btn-minus:focus {
+  outline: none;
+}
+
+.field-num--bg-tran .field-num__input {
+  background: transparent;
+}
+
+.field-price {
+  display: block;
+  margin-bottom: 1.8em;
+  padding-top: 8px;
+}
+
+.field-price__name {
+  display: block;
+  margin-bottom: 0.8em;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.63;
+  color: #202124;
+  text-transform: uppercase;
+}
+
+.field-price__range {
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+
+.field-price__input {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  max-width: 120px;
+  margin: 0 8px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  padding: 14px 24px;
+  line-height: 1.2;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #fff;
+  text-align: center;
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
 /*# sourceMappingURL=app.css.map */
