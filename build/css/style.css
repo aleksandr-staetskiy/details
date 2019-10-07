@@ -1647,6 +1647,14 @@ img {
   border-color: transparent transparent #c9c9c9 transparent;
 }
 
+.d-catalogue__accordion-hidden {
+  display: none;
+}
+
+.d-catalogue__accordion-visible.active + .d-catalogue__accordion-hidden {
+  display: block;
+}
+
 .d-catalogue__accordion-title {
   color: #433f3f;
   margin: 0;
@@ -1674,6 +1682,10 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.product__row:not(:first-child) {
+  border-top: 2px solid #f3f3f3;
 }
 
 .product__head {
