@@ -3,6 +3,10 @@
 	margin-top: 7px;
 	&:hover:not(:first-child) {
 		box-shadow: 0 1px 12px rgba(141, 123, 123, 0.11);
+  }
+  
+  &:hover:not(:first-child) .product__name  {
+		color: $colorPrimery;
 	}
 
   &__row {
@@ -32,19 +36,22 @@
       width: 100px;
   }          
   &__article {
-      width: 100px;  
+      width: 80px;  
   }
   &__name {
-      width: 100px;
+      width: 125px;
+      color: #433f3f;
+      font-size: 1.4rem;
+      font-weight: 700;
   }
   &__producer {
-      width: 100px;
+      width: 80px;
   }
   &__tech-number {
-      width: 100px;
+      width: 75px;
   }
   &__availability {
-      width: 100px;
+      width: 90px;
   }
   &__amount {
       width: 100px;

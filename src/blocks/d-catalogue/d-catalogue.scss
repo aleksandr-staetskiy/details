@@ -63,6 +63,8 @@
 
     &-visible {
       cursor: pointer;
+      padding: 10px 0px;
+      border-top: 2px solid #e7e7e7;
       &.active + .d-catalogue__accordion-hidden {
         display: block;
       }

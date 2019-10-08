@@ -1653,6 +1653,8 @@ img {
 
 .d-catalogue__accordion-visible {
   cursor: pointer;
+  padding: 10px 0px;
+  border-top: 2px solid #e7e7e7;
 }
 
 .d-catalogue__accordion-visible.active + .d-catalogue__accordion-hidden {
@@ -1684,6 +1686,10 @@ img {
 .product:hover:not(:first-child) {
   -webkit-box-shadow: 0 1px 12px rgba(141, 123, 123, 0.11);
           box-shadow: 0 1px 12px rgba(141, 123, 123, 0.11);
+}
+
+.product:hover:not(:first-child) .product__name {
+  color: #f69b2a;
 }
 
 .product__row {
@@ -1721,23 +1727,26 @@ img {
 }
 
 .product__article {
-  width: 100px;
+  width: 80px;
 }
 
 .product__name {
-  width: 100px;
+  width: 125px;
+  color: #433f3f;
+  font-size: 1.4rem;
+  font-weight: 700;
 }
 
 .product__producer {
-  width: 100px;
+  width: 80px;
 }
 
 .product__tech-number {
-  width: 100px;
+  width: 75px;
 }
 
 .product__availability {
-  width: 100px;
+  width: 90px;
 }
 
 .product__amount {
