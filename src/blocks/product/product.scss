@@ -11,7 +11,6 @@
 
   &__row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     &:not(:first-child) {
       border-top: 2px solid #f3f3f3;
@@ -40,37 +39,39 @@
   }
 
   &__photo  {
-      width: 100px;
+      width: 88px;
   }          
   &__article {
-      width: 80px;  
+      width: 85px;  
   }
   &__name {
-      width: 125px;
+      width: 225px;
       color: #433f3f;
       font-size: 1.4rem;
       font-weight: 700;
   }
 
   &__producer {
-      width: 80px;
+      width: 120px;
   }
 
   &__tech-number {
-      width: 75px;
+      width: 120px;
   }
 
   &__availability {
-      width: 90px;
+      width: 122px;
       text-align: center;
   }
 
   &__amount {
-      width: 100px;
+      width: 130px;
   }
 
   &__to-cart {
-      width: 100px;
+      width: 150px;
+      display: flex;
+      justify-content: center;
   }
 
   &__order-only {
@@ -91,7 +92,7 @@
 
   .field-num {
     display: block;
-    margin-bottom: 1.8em; }
+  }
   .field-num__input-wrap {
       position: relative;
       display: block;
