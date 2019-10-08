@@ -1676,6 +1676,16 @@ img {
   opacity: 0.6;
 }
 
+.product {
+  cursor: pointer;
+  margin-top: 7px;
+}
+
+.product:hover:not(:first-child) {
+  -webkit-box-shadow: 0 1px 12px rgba(141, 123, 123, 0.11);
+          box-shadow: 0 1px 12px rgba(141, 123, 123, 0.11);
+}
+
 .product__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1704,6 +1714,38 @@ img {
   font-weight: 700;
   letter-spacing: 0.2px;
   background: #ffffff;
+}
+
+.product__photo {
+  width: 100px;
+}
+
+.product__article {
+  width: 100px;
+}
+
+.product__name {
+  width: 100px;
+}
+
+.product__producer {
+  width: 100px;
+}
+
+.product__tech-number {
+  width: 100px;
+}
+
+.product__availability {
+  width: 100px;
+}
+
+.product__amount {
+  width: 100px;
+}
+
+.product__to-cart {
+  width: 100px;
 }
 
 .field-num {

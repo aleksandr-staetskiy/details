@@ -1,4 +1,9 @@
 .product {
+	cursor: pointer;
+	margin-top: 7px;
+	&:hover:not(:first-child) {
+		box-shadow: 0 1px 12px rgba(141, 123, 123, 0.11);
+	}
 
   &__row {
     display: flex;
@@ -21,6 +26,31 @@
     font-weight: 700;
     letter-spacing: 0.2px;
     background: $white;
+  }
+
+  &__photo  {
+      width: 100px;
+  }          
+  &__article {
+      width: 100px;  
+  }
+  &__name {
+      width: 100px;
+  }
+  &__producer {
+      width: 100px;
+  }
+  &__tech-number {
+      width: 100px;
+  }
+  &__availability {
+      width: 100px;
+  }
+  &__amount {
+      width: 100px;
+  }
+  &__to-cart {
+      width: 100px;
   }
 
 }
