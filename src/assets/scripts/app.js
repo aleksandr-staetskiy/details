@@ -59,7 +59,7 @@ function minusAmount() {
 
 minusAmount();
 
-function plusAmount() {
+function plusAmount() { 
     const btnMinus = document.querySelectorAll('.field-num__btn-plus');
 
     btnMinus.forEach( function(item) {

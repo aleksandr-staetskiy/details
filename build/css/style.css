@@ -772,7 +772,7 @@ img {
 .page-header__street {
   font-size: 1.3rem;
   display: block;
-  width: 120px;
+  width: 140px;
 }
 
 .page-header__phone {
@@ -1715,11 +1715,19 @@ img {
 }
 
 .product__btn {
-  color: #433f3f;
+  color: #ffffff;
+  font-size: 1.6rem;
+  height: 33px;
   font-size: 1.2rem;
   font-weight: 700;
   letter-spacing: 0.2px;
-  background: #ffffff;
+  border-radius: 5px;
+}
+
+.product__btn--added {
+  color: #433f3f;
+  border: 1px solid rgba(222, 222, 222, 0.66);
+  background-color: #ffffff;
 }
 
 .product__photo {
@@ -1747,6 +1755,7 @@ img {
 
 .product__availability {
   width: 90px;
+  text-align: center;
 }
 
 .product__amount {
@@ -1755,6 +1764,18 @@ img {
 
 .product__to-cart {
   width: 100px;
+}
+
+.product__order-only {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(222, 222, 222, 0.66);
+  background-color: #ffffff;
+}
+
+.product__available {
+  color: #019712;
+  font-size: 1.3rem;
 }
 
 .field-num {
