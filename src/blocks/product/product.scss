@@ -46,7 +46,7 @@
       width: 85px;  
   }
   &__name {
-      width: 225px;
+      width: 175px;
       color: #433f3f;
       font-size: 1.4rem;
       font-weight: 700;
@@ -57,11 +57,11 @@
   }
 
   &__tech-number {
-      width: 120px;
+      width: 100px;
   }
 
   &__availability {
-      width: 122px;
+      width: 112px;
       text-align: center;
   }
 
@@ -70,7 +70,7 @@
   }
 
   &__to-cart {
-      width: 150px;
+      width: 120px;
       display: flex;
       justify-content: center;
   }
@@ -85,6 +85,113 @@
   &__available {
     color: #019712;
     font-size: 1.3rem;
+  }
+
+  &__mobile {
+    display: none;
+  }
+
+  @media (max-width: 992px) {
+    &__row {
+      display: none;
+    }
+
+    &__mobile {
+      display: flex;
+      align-items: center;
+
+      &-img {
+        width: 110px;
+      }
+
+      &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      &-item {
+        width: calc(50% - 15px);
+      }
+
+      &-name {
+        margin-top: 10px;
+        color: rgba(67, 63, 63, 0.438);
+      }
+    }
+
+    &__availability {
+     display: inline-block;
+     width: auto;
+     color: $colorTitle;
+    }
+
+    &__article {
+      color: $colorTitle;
+    }
+
+    &__tech-number {
+      color: $colorTitle;
+    }
+
+    &__amount {
+      display: inline-block;
+    }
+
+    &__to-cart {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 770px) {
+   
+
+    &__mobile {
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+
+      &-img {
+        width: 110px;
+      }
+
+      &-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
+
+      &-item {
+        width: calc(50% - 15px);
+      }
+
+      &-name {
+        margin-top: 10px;
+      }
+    }
+
+    &__availability {
+     display: inline-block;
+     width: auto;
+    }
+
+    &__amount {
+      display: inline-block;
+    }
+
+    &__to-cart {
+      width: 100%;
+      margin-top: 10px;
+    }
+
+    &__btn {
+      width: 100%;
+    }
   }
 }
 
