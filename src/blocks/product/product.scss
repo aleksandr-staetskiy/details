@@ -11,6 +11,7 @@
 
   &__row {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     &:not(:first-child) {
       border-top: 2px solid #f3f3f3;
@@ -85,8 +86,6 @@
     color: #019712;
     font-size: 1.3rem;
   }
-
-
 }
 
 

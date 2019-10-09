@@ -1,19 +1,43 @@
 
-@font-face {
-  font-family: 'Clear Sans Regular';
-  src: url('../fonts/ClearSans.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  }
+// @font-face {
+//   font-family: 'Clear Sans Regular';
+//   src: url('../fonts/ClearSans.woff') format('woff');
+//   font-weight: normal;
+//   font-style: normal;
+//   }
 
 
-  @font-face {
-    font-family: 'Clear Sans Bold';
-    src: url('../fonts/ClearSans-Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    }
+//   @font-face {
+//     font-family: 'Clear Sans Bold';
+//     src: url('../fonts/ClearSans-Bold.woff') format('woff');
+//     font-weight: normal;
+//     font-style: normal;
+//     }
 
   .box-name {font-family: 'Clear Sans Regular';}
 
   .box-name {font-family: 'Clear Sans Bold';}
+
+
+
+  @font-face {
+    font-family: 'Clear Sans Regular';
+    src: url('../fonts/ClearSans.eot');
+    src: url('../fonts/ClearSans.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/ClearSans.woff') format('woff'),
+    url('../fonts/ClearSans.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+    @font-face {
+      font-family: 'Clear Sans Bold';
+      src: url('../fpnts/ClearSans-Bold.eot');
+      src: url('../fpnts/ClearSans-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fpnts/ClearSans-Bold.woff') format('woff'),
+      url('../fpnts/ClearSans-Bold.ttf') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+      }
+
