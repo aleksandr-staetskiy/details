@@ -1601,6 +1601,16 @@ img {
           align-items: center;
 }
 
+.d-catalogue__header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 696px;
+}
+
 .d-catalogue__btn {
   color: #433f3f;
   display: -webkit-box;
@@ -1612,7 +1622,7 @@ img {
   height: auto;
   margin-left: auto;
   padding: 15px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   border-radius: 7px;
   background-color: #f4f0f0;
 }
@@ -1630,6 +1640,7 @@ img {
 }
 
 .d-catalogue__amount {
+  width: 150px;
   color: #433f3f;
   margin-left: 5px;
   margin-top: 7px;
@@ -1676,11 +1687,22 @@ img {
 
 .d-catalogue__accordion-amount {
   display: block;
+  width: 80px;
   color: #433f3f;
   margin-left: 10px;
   font-size: 2rem;
   font-weight: 700;
   opacity: 0.6;
+}
+
+.d-catalogue__accordion-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 600px;
 }
 
 @media (max-width: 1000px) {
