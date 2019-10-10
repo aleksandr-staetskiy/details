@@ -45,7 +45,7 @@
                             <button class="btn search__btn"> найти </button>
                         </div>
 
-                        <div class="page-header__cart">
+                        <div class="page-header__cart" data-toggle="modal" data-target="#modal-cart">
                             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="26" viewBox="0 0 41 26" class="page-header__cart-icon">
                                 <g>
                                     <g>
@@ -105,7 +105,7 @@
                         <div class="d-catalogue__accordion-hidden">
                             <div class="d-catalogue__products">
 
-                                <div class="product" data-toggle="modal" data-target="#modal-demo-01">
+                                <div class="product">
                                     <div class="product__row">
                                         <div class="product__photo">
                                             <span class="product__head">Фото</span>
@@ -541,7 +541,7 @@
         </div>
 
 
-        <div class="modal modal--grey" id="modal-demo-01" tabindex="-1" role="dialog">
+        <div class="modal modal--grey" id="modal-cart" tabindex="-1" role="dialog">
             <div class="modal__dialog" role="document">
                 <div class="modal__content modal__content--grey">
                     <div class="modal__header">
@@ -556,7 +556,6 @@
                 </div>
             </div>
         </div>
-
 </body>
 
 </html>
