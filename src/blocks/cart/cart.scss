@@ -23,4 +23,39 @@
     font-size: 1.4rem;
     text-decoration: underline;
   }
+
+  &__order {
+    background: $colorBackground;
+  }
+
+  &-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;
+
+    &__wrap {
+      -ms-flex-preferred-size: calc(33.33333% - 15px);
+      flex-basis: calc(33.33333% - 15px);
+      max-width: calc(33.33333% - 15px);
+    }
+
+    &__btn {
+      height: auto;
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: 0.25px;
+      padding: 10px;
+      border-radius: 7px;
+      background-color: #f69b2a;
+    }
+
+    &__input {
+      height: 50px;
+      border: none;
+      border-radius: 3px;
+      background-color: #ffffff;
+    }
+  }
 }

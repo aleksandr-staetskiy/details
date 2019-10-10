@@ -2204,7 +2204,6 @@ button:focus ~ .field-num__input {
   right: 0;
   bottom: 0;
   left: 0;
-  padding: 15px;
   overflow: hidden;
   -webkit-overflow-scrolling: touch;
 }
@@ -2258,7 +2257,6 @@ button:focus ~ .field-num__input {
 }
 
 .modal__content--grey {
-  padding: 25px;
   background-color: #ffffff;
 }
 
@@ -2295,13 +2293,13 @@ button:focus ~ .field-num__input {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  padding: 0 15px;
+  padding: 15px;
 }
 
 .modal__footer {
   -ms-flex-negative: 0;
       flex-shrink: 0;
-  padding: 15px;
+  padding: 25px;
 }
 
 .modal__backdrop {
@@ -2433,6 +2431,46 @@ button:focus ~ .field-num__input {
   color: rgba(67, 63, 63, 0.685);
   font-size: 1.4rem;
   text-decoration: underline;
+}
+
+.cart__order {
+  background: #f4f0f0;
+}
+
+.cart-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.cart-form__wrap {
+  -ms-flex-preferred-size: calc(33.33333% - 15px);
+  flex-basis: calc(33.33333% - 15px);
+  max-width: calc(33.33333% - 15px);
+}
+
+.cart-form__btn {
+  height: auto;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.25px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: #f69b2a;
+}
+
+.cart-form__input {
+  height: 50px;
+  border: none;
+  border-radius: 3px;
+  background-color: #ffffff;
 }
 
 /*# sourceMappingURL=app.css.map */
