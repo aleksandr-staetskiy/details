@@ -67,7 +67,9 @@
 
   &__header {
     flex-shrink: 0;
+    text-align: center;
     padding: 0 40px 0 15px;
+    border-bottom: 1px solid #727272;
   }
 
   &__title {
@@ -125,6 +127,28 @@
       }
     }
   }
+
+  &__phone {
+    display: block;
+    color: #000;
+    font-size: 1.8rem;
+    &:hover {
+      color: lighten(#000, 20%);
+    }
+  }
+
+  &__schedule {
+    
+    color: lighten(#2d2a2a, 20%);
+    font-size: 1.2rem;
+  }
+
+  @media (max-width: 765px) {
+    
+    &__content {
+      padding: 5px;
+    }
+  }
 }
 
 
@@ -151,4 +175,5 @@
     opacity: 1;
     transform: translateY(0);
   }
+
 }

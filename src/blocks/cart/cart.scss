@@ -1,0 +1,26 @@
+.cart {
+
+  &__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-bottom: 30px;
+  }
+
+  &__title {
+    display: block;
+    color: #2d2a2a;
+    margin: 0;
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+
+  &__clear-all {
+    cursor: pointer;
+    display: block;
+    color: rgba(67, 63, 63, 0.685);
+    font-size: 1.4rem;
+    text-decoration: underline;
+  }
+}
