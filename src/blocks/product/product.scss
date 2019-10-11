@@ -7,7 +7,12 @@
   
   &:hover:not(:first-child) .product__name  {
 		color: $colorPrimery;
-	}
+  }
+  
+  &--bd-grey {
+    border-radius: 3px;
+    border: 1px solid #f3f3f3;
+  }
 
   &__row {
     display: flex;
@@ -91,6 +96,7 @@
   &__mobile {
     display: none;
   }
+
 
   @media (max-width: 992px) {
     &__row {

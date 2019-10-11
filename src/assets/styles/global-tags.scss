@@ -166,12 +166,16 @@ img {
 
 .tag {
   cursor: pointer;
-  display: block;
+  display: inline-block;
   font-size: 1.2rem;
   padding: 7px;
   border-radius: 5px;
   border: 1px solid rgba(222, 222, 222, 0.66);
   background-color: #ffffff;
+}
+
+.mb-0 {
+  margin-bottom: 0!important;
 }
   
 

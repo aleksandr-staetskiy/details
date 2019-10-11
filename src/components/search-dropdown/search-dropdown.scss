@@ -46,4 +46,43 @@
       border: 1px solid $colorPrimery;
     }
   }
+
+  @media (max-width: 1000px) {
+    & {
+      left: 10%;
+      max-width: 593px;
+    }
+  }
+
+  @media (max-width: $screen-md) {
+    & {
+      left: 10%;
+      max-width: 493px;
+    }
+  }
+
+  @media (max-width: 591px) {
+    & {
+      left: 10%;
+      max-width: 403px;
+    }
+  }
+
+  @media (max-width: 540px) {
+    & {
+      top: 17%;
+      left: 5%;
+      max-width: 403px;
+    }
+  }
+
+  @media (max-width: 412px) {
+    & {
+      top: 17%;
+      left: 10px;
+      right: 10px;
+      width: 92%;
+      max-width: 92%;
+    }
+  }
 }
