@@ -9463,41 +9463,6 @@ orderedAccordion();
 
 /***/ }),
 
-/***/ "./src/assets/scripts/amountToggle.js":
-/*!********************************************!*\
-  !*** ./src/assets/scripts/amountToggle.js ***!
-  \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-orderedAccordion();
-
-function minusAmount() {
-  const btnMinus = document.querySelectorAll('.field-num__btn-minus');
-  btnMinus.forEach(function (item) {
-    item.addEventListener('click', function () {
-      const chosenBtn = this.parentElement.querySelector('.field-num__input');
-      let minus = chosenBtn.value--;
-    });
-  });
-}
-
-minusAmount();
-
-function plusAmount() {
-  const btnMinus = document.querySelectorAll('.field-num__btn-plus');
-  btnMinus.forEach(function (item) {
-    item.addEventListener('click', function () {
-      const chosenBtn = this.parentElement.querySelector('.field-num__input');
-      let plus = chosenBtn.value++;
-    });
-  });
-}
-
-plusAmount();
-
-/***/ }),
-
 /***/ "./src/assets/scripts/app.js":
 /*!***********************************!*\
   !*** ./src/assets/scripts/app.js ***!
@@ -9512,10 +9477,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scripts_search_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scripts_search_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scripts/accordion.js */ "./src/assets/scripts/accordion.js");
 /* harmony import */ var _scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _scripts_amountToggle_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scripts/amountToggle.js */ "./src/assets/scripts/amountToggle.js");
-/* harmony import */ var _scripts_amountToggle_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scripts_amountToggle_js__WEBPACK_IMPORTED_MODULE_3__);
 
-
+ // import amountToggle from '../scripts/amountToggle.js';
 
 
 
