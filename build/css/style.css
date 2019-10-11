@@ -1212,11 +1212,46 @@ img {
   display: none;
   width: 593px;
   margin-top: 10px;
+  padding: 15px;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.19);
   border-radius: 3px;
   background-color: #ffffff;
   z-index: 100;
+}
+
+.search-dropdown__tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.search-dropdown__tag {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 12px;
+  margin-bottom: 8px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 5px;
+  padding-right: 20px;
+  border-radius: 5px;
+  border: 1px solid rgba(222, 222, 222, 0.66);
+  background-color: #ffffff;
+  -webkit-transform-style: .3s ease;
+          transform-style: .3s ease;
+}
+
+.search-dropdown__tag-icon {
+  margin-right: 12px;
+}
+
+.search-dropdown__tag:hover {
+  border: 1px solid #f69b2a;
 }
 
 .advantages {
