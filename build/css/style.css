@@ -404,6 +404,16 @@ img {
           transform: rotate(-45deg);
 }
 
+.tag {
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgba(222, 222, 222, 0.66);
+  background-color: #ffffff;
+}
+
 .grid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1220,10 +1230,18 @@ img {
   z-index: 100;
 }
 
+.search-dropdown__row-title {
+  color: #433f3f;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
 .search-dropdown__tags {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 0;
   list-style: none;
 }
@@ -1235,10 +1253,7 @@ img {
   display: flex;
   margin-right: 12px;
   margin-bottom: 8px;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  padding-left: 5px;
-  padding-right: 20px;
+  padding: 12px;
   border-radius: 5px;
   border: 1px solid rgba(222, 222, 222, 0.66);
   background-color: #ffffff;
@@ -1248,6 +1263,10 @@ img {
 
 .search-dropdown__tag-icon {
   margin-right: 12px;
+}
+
+.search-dropdown__tag-name {
+  margin-right: 10px;
 }
 
 .search-dropdown__tag:hover {

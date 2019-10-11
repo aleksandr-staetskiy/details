@@ -9,8 +9,17 @@
   background-color: #ffffff;
   z-index: 100;
 
+  &__row {
+    &-title {
+      color: $colorTitle;
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+  }
+
   &__tags {
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     list-style: none;
   }
@@ -20,16 +29,17 @@
     display: flex;
     margin-right: 12px;
     margin-bottom: 8px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-left: 5px;
-    padding-right: 20px;
+    padding: 12px;
     border-radius: 5px;
     border: 1px solid rgba(222, 222, 222, 0.66);
     background-color: #ffffff;
     transform-style: .3s ease;
     &-icon {
       margin-right: 12px;
+    }
+
+    &-name {
+      margin-right: 10px;
     }
 
     &:hover {

@@ -163,6 +163,16 @@ img {
     transform: rotate(-45deg);
   }
 }
+
+.tag {
+  cursor: pointer;
+  display: block;
+  font-size: 1.2rem;
+  padding: 7px;
+  border-radius: 5px;
+  border: 1px solid rgba(222, 222, 222, 0.66);
+  background-color: #ffffff;
+}
   
 
 
