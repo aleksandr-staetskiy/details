@@ -9409,17 +9409,13 @@ var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
 
 /***/ }),
 
-/***/ "./src/assets/scripts/app.js":
-/*!***********************************!*\
-  !*** ./src/assets/scripts/app.js ***!
-  \***********************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ "./src/assets/scripts/accordion.js":
+/*!*****************************************!*\
+  !*** ./src/assets/scripts/accordion.js ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
-/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
 function orderedAccordion() {
   const orderedAccordionPanel = document.querySelectorAll('.d-catalogue__accordion-visible');
 
@@ -9465,6 +9461,17 @@ function orderedAccordion() {
 
 orderedAccordion();
 
+/***/ }),
+
+/***/ "./src/assets/scripts/amountToggle.js":
+/*!********************************************!*\
+  !*** ./src/assets/scripts/amountToggle.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+orderedAccordion();
+
 function minusAmount() {
   const btnMinus = document.querySelectorAll('.field-num__btn-minus');
   btnMinus.forEach(function (item) {
@@ -9488,6 +9495,43 @@ function plusAmount() {
 }
 
 plusAmount();
+
+/***/ }),
+
+/***/ "./src/assets/scripts/app.js":
+/*!***********************************!*\
+  !*** ./src/assets/scripts/app.js ***!
+  \***********************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _scripts_modal__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scripts/modal */ "./src/assets/scripts/modal.js");
+/* harmony import */ var _scripts_search_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../scripts/search.js */ "./src/assets/scripts/search.js");
+/* harmony import */ var _scripts_search_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scripts_search_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scripts/accordion.js */ "./src/assets/scripts/accordion.js");
+/* harmony import */ var _scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _scripts_amountToggle_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scripts/amountToggle.js */ "./src/assets/scripts/amountToggle.js");
+/* harmony import */ var _scripts_amountToggle_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_scripts_amountToggle_js__WEBPACK_IMPORTED_MODULE_3__);
+
+
+
+
+
+/***/ }),
+
+/***/ "./src/assets/scripts/modal.js":
+/*!*************************************!*\
+  !*** ./src/assets/scripts/modal.js ***!
+  \*************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
  // Демо событий модальных окон
 
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
@@ -9821,6 +9865,36 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     Plugin.call($target, option, this);
   });
 }(jquery__WEBPACK_IMPORTED_MODULE_0___default.a);
+
+/***/ }),
+
+/***/ "./src/assets/scripts/search.js":
+/*!**************************************!*\
+  !*** ./src/assets/scripts/search.js ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+const input = document.querySelector('.search__input ');
+const searchResult = document.querySelector('.search-dropdown');
+const btn = document.querySelector('.btn');
+const search = document.querySelector('.search');
+input.addEventListener('focus', function (e) {
+  if (e.target === input) {
+    searchResult.style.display = "block";
+    window.addEventListener('click', function (e) {
+      if (!e.target.closest('.search')) {
+        searchResult.style.display = "none";
+      }
+    });
+    window.removeEventListener('click', function (e) {
+      if (!e.target.closest('.search')) {
+        searchResult.style.display = "none";
+      }
+    });
+  }
+});
+console.log('it works bitch');
 
 /***/ })
 
