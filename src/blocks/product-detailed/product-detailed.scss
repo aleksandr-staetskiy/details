@@ -1,3 +1,11 @@
 .product-detailed {
-  padding: 1px;
+
+  &__img {
+    &-wrap {
+      width: 369px;
+      height: 368px;
+      border-radius: 7px;
+      border: 1px solid #e7e7e7;
+    }
+  }
 }

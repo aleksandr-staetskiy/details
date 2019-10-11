@@ -2587,4 +2587,11 @@ button:focus ~ .field-num__input {
   background-color: #ffffff;
 }
 
+.product-detailed__img-wrap {
+  width: 369px;
+  height: 368px;
+  border-radius: 7px;
+  border: 1px solid #e7e7e7;
+}
+
 /*# sourceMappingURL=app.css.map */
