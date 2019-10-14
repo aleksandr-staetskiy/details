@@ -1,0 +1,29 @@
+.detailed-scheme {
+  position: relative;
+  margin-top: 90px;
+
+  &__point-element {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 12px;
+    border-radius: 5px;
+    background-color: #f4f0f0;
+    transition: .3s ease;
+
+    &:hover {
+      color: $white;
+      background: $colorPrimery;
+    }
+
+    &--num-1 {
+      left: 46%;
+      top: 48%;
+    }
+  }
+
+  &__img-wrap {
+    display: flex;
+    justify-content: center;
+  }
+}

@@ -2770,4 +2770,40 @@ button:focus ~ .field-num__input {
   display: flex;
 }
 
+.detailed-scheme {
+  position: relative;
+  margin-top: 90px;
+}
+
+.detailed-scheme__point-element {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 12px;
+  border-radius: 5px;
+  background-color: #f4f0f0;
+  -webkit-transition: .3s ease;
+  -o-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.detailed-scheme__point-element:hover {
+  color: #ffffff;
+  background: #f69b2a;
+}
+
+.detailed-scheme__point-element--num-1 {
+  left: 46%;
+  top: 48%;
+}
+
+.detailed-scheme__img-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 /*# sourceMappingURL=app.css.map */
