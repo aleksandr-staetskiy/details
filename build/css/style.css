@@ -2771,8 +2771,11 @@ button:focus ~ .field-num__input {
 }
 
 .detailed-scheme {
-  position: relative;
   margin-top: 90px;
+}
+
+.detailed-scheme__touch-area {
+  position: relative;
 }
 
 .detailed-scheme__point-element {
@@ -2804,6 +2807,19 @@ button:focus ~ .field-num__input {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.detailed-scheme__target {
+  margin-top: 25px;
+  border-bottom: 1px solid #d1d8df;
+}
+
+.detailed-scheme__target-num {
+  display: inline-block;
+  padding: 2px 12px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #f4f0f0;
 }
 
 /*# sourceMappingURL=app.css.map */
