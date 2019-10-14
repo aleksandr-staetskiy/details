@@ -1482,6 +1482,29 @@ img {
   }
 }
 
+.advantege {
+  margin-top: 30px;
+  padding: 0px 30px;
+}
+
+.advantege--has-borders {
+  border-left: 1px solid #433f3f;
+  border-right: 1px solid #433f3f;
+}
+
+.advantege__title {
+  color: #433f3f;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.advantege__descr {
+  color: #625b5b;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
 .catalogue__main-title {
   color: #433f3f;
   font-size: 4rem;
@@ -1884,6 +1907,7 @@ img {
 .product {
   cursor: pointer;
   margin-top: 7px;
+  background: #ffffff;
 }
 
 .product:hover:not(:first-child) {
@@ -1898,6 +1922,10 @@ img {
 .product--bd-grey {
   border-radius: 3px;
   border: 1px solid #f3f3f3;
+}
+
+.product--theme-transparent {
+  background: transparent;
 }
 
 .product__row {
@@ -2592,6 +2620,52 @@ button:focus ~ .field-num__input {
   height: 368px;
   border-radius: 7px;
   border: 1px solid #e7e7e7;
+}
+
+.product-detailed__title {
+  color: #2d2a2a;
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-detailed__availability {
+  color: #019712;
+  font-size: 1.3rem;
+}
+
+.product-detailed__descr {
+  padding: 0;
+  list-style: none;
+}
+
+.product-detailed__descr li {
+  margin-top: 1.7rem;
+}
+
+.product-detailed__btn {
+  font-size: 2rem;
+  letter-spacing: 0.25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 7px;
+  margin-left: 15px;
+}
+
+.product-detailed__analogue {
+  margin: 0px -15px;
+  margin-bottom: -15px;
+  padding: 0px 25px;
+  padding-bottom: 15px;
+  background: #f4f0f0;
+}
+
+.product-detailed__analogue-title {
+  color: #433f3f;
+  font-size: 1.8rem;
+  font-weight: 700;
+  padding-top: 30px;
 }
 
 /*# sourceMappingURL=app.css.map */

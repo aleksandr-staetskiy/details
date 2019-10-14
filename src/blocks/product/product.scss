@@ -1,6 +1,7 @@
 .product {
 	cursor: pointer;
-	margin-top: 7px;
+  margin-top: 7px;
+  background: $white;
 	&:hover:not(:first-child) {
 		box-shadow: 0 1px 12px rgba(141, 123, 123, 0.11);
   }
@@ -12,6 +13,10 @@
   &--bd-grey {
     border-radius: 3px;
     border: 1px solid #f3f3f3;
+  }
+
+  &--theme-transparent {
+    background: transparent;
   }
 
   &__row {

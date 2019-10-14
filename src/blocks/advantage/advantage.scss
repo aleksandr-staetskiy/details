@@ -1,0 +1,27 @@
+.advantege {
+  margin-top: 30px;
+  padding: 0px 30px;
+
+  &--has-borders {
+    border-left: 1px solid $colorTitle;
+    border-right: 1px solid $colorTitle;
+  }
+
+  &__icon {
+
+  }
+
+  &__title {
+    color: $colorTitle;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__descr {
+    color: lighten($gray, 20%);
+    font-size: 1.3rem;
+    margin: 0;
+  }
+
+}

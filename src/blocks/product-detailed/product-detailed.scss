@@ -8,4 +8,50 @@
       border: 1px solid #e7e7e7;
     }
   }
+
+  &__title {
+    color: $gray;
+    font-size: 3.2rem;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  &__availability {
+    color: #019712;
+    font-size: 1.3rem;
+  }
+
+  &__descr {
+    padding: 0;
+    list-style: none;
+
+    & li {
+      margin-top: 1.7rem;
+    }
+  }
+
+  &__btn {
+    font-size: 2rem;
+    letter-spacing: 0.25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 7px;
+    margin-left: 15px;
+  }
+
+  &__analogue {
+    margin: 0px -15px;
+    margin-bottom: -15px;
+    padding: 0px 25px;
+    padding-bottom: 15px;
+    background: $colorBackground;
+
+    &-title {
+      color: $colorTitle;
+      font-size: 1.8rem;
+      font-weight: 700;
+      padding-top: 30px;
+    }
+  }
 }
