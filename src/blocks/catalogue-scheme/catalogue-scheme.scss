@@ -1,6 +1,21 @@
 .catalogue-scheme {
 
   &__item {
+
+    &:hover .catalogue-scheme__img-wrap {
+      border: 2px solid $colorPrimery;
+    }
+
+    &:hover .catalogue-scheme__type-name {
+      color: $colorPrimery;
+    }
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__img-wrap {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -11,9 +26,12 @@
     border: 1px solid #e7e7e7;
     background-color: #ffffff;
     transition: .1s ease;
+  }
 
-    &:hover {
-      border: 2px solid #f69b2a;
-    }
+  &__type-name {
+    color: $colorTitle;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: 5px;
   }
 }

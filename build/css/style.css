@@ -2699,7 +2699,19 @@ button:focus ~ .field-num__input {
   }
 }
 
-.catalogue-scheme__item {
+.catalogue-scheme__item:hover .catalogue-scheme__img-wrap {
+  border: 2px solid #f69b2a;
+}
+
+.catalogue-scheme__item:hover .catalogue-scheme__type-name {
+  color: #f69b2a;
+}
+
+.catalogue-scheme__item:hover {
+  text-decoration: none;
+}
+
+.catalogue-scheme__img-wrap {
   cursor: pointer;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2720,8 +2732,11 @@ button:focus ~ .field-num__input {
   transition: .1s ease;
 }
 
-.catalogue-scheme__item:hover {
-  border: 2px solid #f69b2a;
+.catalogue-scheme__type-name {
+  color: #433f3f;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-top: 5px;
 }
 
 /*# sourceMappingURL=app.css.map */
