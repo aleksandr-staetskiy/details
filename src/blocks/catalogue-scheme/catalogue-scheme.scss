@@ -1,0 +1,19 @@
+.catalogue-scheme {
+
+  &__item {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 256px;
+    margin-top: 5rem;
+    border-radius: 7px;
+    border: 1px solid #e7e7e7;
+    background-color: #ffffff;
+    transition: .1s ease;
+
+    &:hover {
+      border: 2px solid #f69b2a;
+    }
+  }
+}
