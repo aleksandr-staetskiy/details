@@ -24,4 +24,15 @@
     margin: 0;
   }
 
+  @media (max-width: $screen-sm) {
+
+    & {
+      padding: 0;
+    }
+
+    &--has-borders {
+      border: 0;
+    }
+
+  }
 }

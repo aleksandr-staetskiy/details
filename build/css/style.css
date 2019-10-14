@@ -1505,6 +1505,15 @@ img {
   margin: 0;
 }
 
+@media (max-width: 540px) {
+  .advantege {
+    padding: 0;
+  }
+  .advantege--has-borders {
+    border: 0;
+  }
+}
+
 .catalogue__main-title {
   color: #433f3f;
   font-size: 4rem;
@@ -2616,7 +2625,7 @@ button:focus ~ .field-num__input {
 }
 
 .product-detailed__img-wrap {
-  width: 369px;
+  max-width: 369px;
   height: 368px;
   border-radius: 7px;
   border: 1px solid #e7e7e7;
@@ -2645,7 +2654,7 @@ button:focus ~ .field-num__input {
 }
 
 .product-detailed__btn {
-  font-size: 2rem;
+  font-size: 1.8rem;
   letter-spacing: 0.25px;
   padding-left: 40px;
   padding-right: 40px;
@@ -2666,6 +2675,25 @@ button:focus ~ .field-num__input {
   font-size: 1.8rem;
   font-weight: 700;
   padding-top: 30px;
+}
+
+@media (max-width: 769px) {
+  .product-detailed-modal {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 540px) {
+  .product-detailed__type {
+    margin-top: 20px;
+  }
+  .product-detailed__title {
+    font-size: 2.6rem;
+    margin-top: 10px;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

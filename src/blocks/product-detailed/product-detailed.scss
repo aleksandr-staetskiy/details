@@ -2,7 +2,7 @@
 
   &__img {
     &-wrap {
-      width: 369px;
+      max-width: 369px;
       height: 368px;
       border-radius: 7px;
       border: 1px solid #e7e7e7;
@@ -32,7 +32,7 @@
   }
 
   &__btn {
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: 0.25px;
     padding-left: 40px;
     padding-right: 40px;
@@ -52,6 +52,24 @@
       font-size: 1.8rem;
       font-weight: 700;
       padding-top: 30px;
+    }
+  }
+
+  @media (max-width: 769px) {
+    &-modal {
+      flex-direction: column;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+
+    &__type {
+      margin-top: 20px;
+    }
+
+    &__title {
+      font-size: 2.6rem;
+      margin-top: 10px;
     }
   }
 }
