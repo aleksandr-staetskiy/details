@@ -2694,6 +2694,9 @@ button:focus ~ .field-num__input {
     font-size: 2.6rem;
     margin-top: 10px;
   }
+  .product-detailed__btn {
+    font-size: 1.6rem;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
