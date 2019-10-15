@@ -19,6 +19,13 @@
     background: transparent;
   }
 
+  &--head {
+    cursor: default!important;
+    &:hover {
+      box-shadow: none!important;
+    }
+  }
+
   &__row {
     display: flex;
     justify-content: space-between;

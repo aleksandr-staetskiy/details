@@ -6,6 +6,7 @@
   }
 
   &__point-element {
+    color: $black;
     cursor: pointer;
     position: absolute;
     display: block;
@@ -17,6 +18,7 @@
     &:hover {
       color: $white;
       background: $colorPrimery;
+      text-decoration: none;
     }
 
     &--num-1 {

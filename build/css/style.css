@@ -1937,6 +1937,15 @@ img {
   background: transparent;
 }
 
+.product--head {
+  cursor: default !important;
+}
+
+.product--head:hover {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
 .product__row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2779,6 +2788,7 @@ button:focus ~ .field-num__input {
 }
 
 .detailed-scheme__point-element {
+  color: #000000;
   cursor: pointer;
   position: absolute;
   display: block;
@@ -2793,6 +2803,7 @@ button:focus ~ .field-num__input {
 .detailed-scheme__point-element:hover {
   color: #ffffff;
   background: #f69b2a;
+  text-decoration: none;
 }
 
 .detailed-scheme__point-element--num-1 {
