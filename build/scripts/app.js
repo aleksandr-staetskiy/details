@@ -9477,8 +9477,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scripts_search_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_scripts_search_js__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../scripts/accordion.js */ "./src/assets/scripts/accordion.js");
 /* harmony import */ var _scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_scripts_accordion_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _scripts_smoothScroll_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../scripts/smoothScroll.js */ "./src/assets/scripts/smoothScroll.js");
 
  // import amountToggle from '../scripts/amountToggle.js';
+
 
 
 
@@ -9865,6 +9867,27 @@ function showPageSearch() {
 }
 
 console.log('it works bitch');
+
+/***/ }),
+
+/***/ "./src/assets/scripts/smoothScroll.js":
+/*!********************************************!*\
+  !*** ./src/assets/scripts/smoothScroll.js ***!
+  \********************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js");
+/* harmony import */ var jquery__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(jquery__WEBPACK_IMPORTED_MODULE_0__);
+
+jquery__WEBPACK_IMPORTED_MODULE_0___default()('a[href*="#"]').on('click', function (e) {
+  e.preventDefault();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('html, body').animate({
+    scrollTop: jquery__WEBPACK_IMPORTED_MODULE_0___default()(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('href')).offset().top
+  }, 500, 'linear');
+});
 
 /***/ })
 
