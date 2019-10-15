@@ -1,0 +1,25 @@
+.certain-type {
+
+  &__title {
+    color: $colorTitle;
+    font-size: 3.2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    color: #433f3f;
+    font-size: 1.6rem;
+    max-width: 660px;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  &__search {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+  }
+
+}

@@ -1189,6 +1189,14 @@ img {
   border-radius: 0 7px 7px 0;
 }
 
+.search__icon {
+  padding: 6px;
+  padding-right: 15px;
+  margin: auto;
+  margin-left: 15px;
+  border-right: 1px solid #d1d8df;
+}
+
 @media (max-width: 1000px) {
   .search {
     max-width: 320px;
@@ -2859,6 +2867,32 @@ button:focus ~ .field-num__input {
   .detailed-scheme__touch-area {
     display: none;
   }
+}
+
+.certain-type__title {
+  color: #433f3f;
+  font-size: 3.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.certain-type__subtitle {
+  color: #433f3f;
+  font-size: 1.6rem;
+  max-width: 660px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.certain-type__search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 50px;
 }
 
 /*# sourceMappingURL=app.css.map */

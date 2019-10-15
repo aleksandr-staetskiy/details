@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    {% include '../blocks/header/main_header.twig' %}
+
+    <main class="main">
+      <div class="main__container">
+        <div class="main__content">
+          <section class="certain-type">
+            <h1 class="certain-type__title">Определение типа АКПП</h1>
+            <div class="certain-type__subtitle">
+              <p>Обычно квалифицированный специалист может без труда определить тип АКПП, однако,
+                 бывают ситуации, когда без помощи не обойтись. Можно сделать предположение о возможном 
+                 типе АКПП, не видя самого агрегата, если есть информация о марке и модели автомобиля, 
+                 годе выпуска, объеме двигателя. Обращаем ваше внимание, что речь идет лишь о предположении,
+                  так как возможны варианты или неточности.</p>
+            </div>
+            
+            <div class="certain-type__search">
+                {% include '../components/search/search.twig' with {
+                  icon_class: "search__icon",
+                  icon: "./img/car-icon.jpg",
+                  txt: "найти",
+                  btn_classes: "search__btn",
+                  placeholder: "Введите марку и или модель автомобиля"
+                  }
+                  %}
+            </div>
+
+
+          </section>
+
+
+      {% include '../blocks/footer/footer.twig' %}
