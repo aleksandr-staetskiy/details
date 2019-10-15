@@ -44,4 +44,11 @@
       background-color: #f4f0f0;
     }
   }
+
+  @media (max-width: $screen-lg) {
+
+   &__touch-area {
+    display: none;
+   } 
+  }
 }

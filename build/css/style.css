@@ -2779,6 +2779,28 @@ button:focus ~ .field-num__input {
   display: flex;
 }
 
+@media (max-width: 960px) {
+  .catalogue-scheme__preview {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .catalogue-scheme__item--size-sm {
+    margin-right: 15px;
+  }
+}
+
+@media (max-width: 540px) {
+  .catalogue-scheme__item--size-sm {
+    display: block;
+    width: 100px;
+    height: 120px;
+    margin-right: 30px;
+  }
+}
+
 .detailed-scheme {
   margin-top: 90px;
 }
@@ -2831,6 +2853,12 @@ button:focus ~ .field-num__input {
   margin-bottom: 5px;
   border-radius: 5px;
   background-color: #f4f0f0;
+}
+
+@media (max-width: 960px) {
+  .detailed-scheme__touch-area {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
