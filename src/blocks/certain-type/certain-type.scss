@@ -59,4 +59,27 @@
     }
   }
 
+
+  @media (max-width: $screen-md) {
+    &__search .search {
+      max-width: 100%!important;
+    }
+
+    &__subtitle {
+      font-size: 1.4rem;
+    }
+
+    &__brand {
+      margin-right: 0;
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &__search .search {
+      position: relative!important;
+      top: 0%;
+      left: 0%;
+    }
+  }
+
 }

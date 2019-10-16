@@ -1204,6 +1204,12 @@ img {
   }
 }
 
+@media (max-width: 768px) {
+  .search__icon {
+    display: none;
+  }
+}
+
 @media (max-width: 540px) {
   .search {
     top: 85px;
@@ -2935,6 +2941,26 @@ button:focus ~ .field-num__input {
   color: #333333;
   width: 50px;
   margin-left: 15px;
+}
+
+@media (max-width: 768px) {
+  .certain-type__search .search {
+    max-width: 100% !important;
+  }
+  .certain-type__subtitle {
+    font-size: 1.4rem;
+  }
+  .certain-type__brand {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 540px) {
+  .certain-type__search .search {
+    position: relative !important;
+    top: 0%;
+    left: 0%;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
