@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  {% include '../blocks/header/main_header.twig' %}
+
+  <main class="main">
+    <div class="main__container">
+      <div class="main__content">
+        <section class="delivery">
+          <h1 class="delivery__main-title">Доставка и оплата</h1>
+          <div class="grid">
+            <div class="grid__col grid__col--tablet-7">
+              <h2> Доставка </h2>
+              <span class="delivery__subtitle">По Санкт-Петербургу и Ленинградской области</span>
+              <ul>
+                <li>Стоимость рассчитывают менеджеры при заказе</li>
+                <li>Доставка осуществляется с понедельника по субботу с 12.00 до 21.00</li>
+              </ul>
+              <span class="delivery__subtitle">Можно забрать товар в пункте самовывоза </span>
+              <p>г. Санкт-Петербург Старо-Петергофский Пр-кт, д. 20, к. 3</p>
+
+              <div class="delivery__schedule">
+                  <div class="delivery__schedule-item">
+                    <span class="delivery__schedule-date">Пн - Пт: 10.00 - 19.00</span>
+                    <span class="delivery__schedule-date">Сб - Вс: выходные</span>
+                  </div>
+                  <div class="delivery__schedule-item">
+                      <span class="delivery__schedule-date">+7 (812) 405-80-17</span>
+                      <span class="delivery__schedule-date">info@leonis.su</span>
+                  </div>
+              </div>
+
+              <span class="delivery__subtitle" >По России</span>
+              <p>Доставка по России  осуществляется с помощью транспортных компаний.</p>
+              <div class="delivery__icons">
+                <span class="delivery__icon" style="background: url(../../img/cdek.jpg);"></span>
+                <span class="delivery__icon" style="background: url(../../img/cdek.jpg);"></span>
+                <span class="delivery__icon" style="background: url(../../img/cdek.jpg);"></span>
+              </div>
+            </div>
+            <div class="grid__col grid__col--tablet-5">
+                <h2> Оплата </h2>
+                <span class="delivery__subtitle">Заказ можно оплатить следующими способами:</span>
+                <ul>
+                  <li>банковской картой на сайте или при получении товара</li>
+                  <li>наличными курьеру</li>
+                  <li>интернет кошельками</li>
+                </ul>
+
+                <div class="delivery__icons">
+                    <span class="delivery__icon" style="background: url(../../img/cdek.jpg);"></span>
+                    <span class="delivery__icon" style="background: url(../../img/cdek.jpg);"></span>
+                    <span class="delivery__icon" style="background: url(../../img/cdek.jpg);"></span>
+                  </div>
+            </div>
+          </div>
+        </section>
+
+        {% include '../blocks/footer/footer.twig' %}

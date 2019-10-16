@@ -1,0 +1,56 @@
+.delivery {
+  color: #433f3f;
+  font-size: 1.6rem;
+
+  &__title {
+    color: $colorTitle;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__icon {
+    display: block;
+    width: 66px;
+    height: 15px;
+    margin-right: 20px;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+  }
+
+  & ul {
+    list-style: none;
+    padding-left: 7px;
+  }
+
+  & li::before {
+    content: '-';
+    color: #000;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  &__subtitle {
+    display: block;
+    color: #262626;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  
+  &__schedule {
+    display: flex;
+    &-item {
+      margin-right: 28px;
+    }
+
+    &-date {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 10px;
+    }
+  }
+}
