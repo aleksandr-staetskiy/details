@@ -1,5 +1,52 @@
 .model-row {
 
+  &-mobile {
+    display: none;
+
+    &__item {
+      display: flex;
+      margin-top: 20px;
+      padding: 10px;
+      border-radius: 3px;
+      border: 1px solid #dedede;
+    }
+
+    &__left {
+      width: 60%;
+    }
+
+    &__right {
+      width: 40%;
+    }
+
+    &__name {
+      display: block;
+      color: #433f3f;
+      font-size: 1.6rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+
+      &--bottom {
+        padding-top: 10px;
+        border-top: 1px solid #dedede;
+      }
+    }
+
+    &__info {
+      display: block;
+      margin-bottom: 10px;
+
+      &--orange {
+        color: $colorPrimery;
+      }
+
+      &--bottom {
+        padding-top: 10px;
+        border-top: 1px solid #dedede;
+      }
+    }
+  }
+
   &__title {
     color: $colorTitle;
     font-size: 3.2rem;
@@ -79,6 +126,16 @@
       & span {
         font-size: 12px;
       }
+    }
+  }
+
+  @media (max-width: $screen-sm) {
+    &__table {
+      display: none;
+    }
+
+    &-mobile {
+      display: block;
     }
   }
 }

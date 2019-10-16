@@ -2880,6 +2880,55 @@ button:focus ~ .field-num__input {
   }
 }
 
+.model-row-mobile {
+  display: none;
+}
+
+.model-row-mobile__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #dedede;
+}
+
+.model-row-mobile__left {
+  width: 60%;
+}
+
+.model-row-mobile__right {
+  width: 40%;
+}
+
+.model-row-mobile__name {
+  display: block;
+  color: #433f3f;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.model-row-mobile__name--bottom {
+  padding-top: 10px;
+  border-top: 1px solid #dedede;
+}
+
+.model-row-mobile__info {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.model-row-mobile__info--orange {
+  color: #f69b2a;
+}
+
+.model-row-mobile__info--bottom {
+  padding-top: 10px;
+  border-top: 1px solid #dedede;
+}
+
 .model-row__title {
   color: #433f3f;
   font-size: 3.2rem;
@@ -2970,6 +3019,15 @@ button:focus ~ .field-num__input {
 @media (max-width: 768px) {
   .model-row__table span {
     font-size: 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  .model-row__table {
+    display: none;
+  }
+  .model-row-mobile {
+    display: block;
   }
 }
 
