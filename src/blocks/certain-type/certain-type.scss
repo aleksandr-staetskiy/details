@@ -22,4 +22,41 @@
     margin-top: 50px;
   }
 
+  &__grid {
+    margin-top: 50px;
+  }
+
+  &__brand {
+    cursor: pointer;
+    display: flex;
+    max-width: 154px;
+    align-items: center;
+    padding: 6px 10px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+    border-radius: 5px;
+    border: 1px solid rgba(222, 222, 222, 0.66);
+    background-color: #ffffff;
+    transform-style: .3s ease;
+
+    &:hover {
+      border: 1px solid $colorPrimery;
+    }
+
+    &-icon {
+      display: block;
+      width: 30px;
+      height: 30px;
+      margin-top: 5px;
+      background-size: cover;
+      background-repeat: no-repeat!important;
+    }
+
+    &-name {
+      color:lighten(#000000, 20%);
+      width: 50px;
+      margin-left: 15px;
+    }
+  }
+
 }
