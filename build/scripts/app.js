@@ -9888,6 +9888,12 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()('a[href*="#"]').on('click', functi
     scrollTop: jquery__WEBPACK_IMPORTED_MODULE_0___default()(jquery__WEBPACK_IMPORTED_MODULE_0___default()(this).attr('href')).offset().top
   }, 500, 'linear');
 });
+jquery__WEBPACK_IMPORTED_MODULE_0___default()(window).on("load resize ", function () {
+  var scrollWidth = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tbl-content').width() - jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tbl-content table').width();
+  jquery__WEBPACK_IMPORTED_MODULE_0___default()('.tbl-header').css({
+    'padding-right': scrollWidth
+  });
+}).resize();
 
 /***/ })
 

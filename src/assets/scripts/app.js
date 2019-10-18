@@ -10,4 +10,3 @@ import accordion from '../scripts/accordion.js';
 
 import smoothScroll from '../scripts/smoothScroll.js';
 
-

@@ -3400,7 +3400,6 @@ button:focus ~ .field-num__input {
 table {
   width: 100%;
   table-layout: fixed;
-  border-collapse: collapse;
 }
 
 .tbl-header {
@@ -3425,6 +3424,7 @@ th {
   font-size: 12px;
   color: #000000;
   text-transform: uppercase;
+  word-break: break-all;
 }
 
 td {
@@ -3433,6 +3433,7 @@ td {
   vertical-align: middle;
   font-size: 14px;
   color: #433f3f;
+  word-break: break-all;
 }
 
 .border-around {
@@ -3453,12 +3454,27 @@ td {
   background-color: #fbf9f9;
 }
 
+.border-around:hover .th--highlighted {
+  color: #f69b2a;
+}
+
+.border-around:hover .th--highlighted::after {
+  content: '>';
+  position: absolute;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
 tbody {
   border-bottom: 1px solid #dedede;
 }
 
 .th--highlighted {
   color: #f69b2a;
+}
+
+.th--highlighted:hover {
+  text-decoration: none;
 }
 
 .delivery {
