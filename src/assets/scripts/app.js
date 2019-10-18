@@ -10,3 +10,13 @@ import accordion from '../scripts/accordion.js';
 
 import smoothScroll from '../scripts/smoothScroll.js';
 
+
+
+let borderAround = document.querySelectorAll('.border-around');
+
+borderAround.forEach(  function(item) {
+  console.log(item);
+  
+})
+
+console.log(borderAround);

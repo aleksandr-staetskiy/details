@@ -9483,6 +9483,11 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+let borderAround = document.querySelectorAll('.border-around');
+borderAround.forEach(function (item) {
+  console.log(item);
+});
+console.log(borderAround);
 
 /***/ }),
 

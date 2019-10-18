@@ -42,9 +42,19 @@
     width: 140px;
   }
 
-  &__phone {
-    color: $black;
-    font-size: 1.6rem;
+  &__info {
+    width: 155px;
+    & a {
+      display: block;
+      color: $black;
+      font-size: 1.6rem;
+    }
+
+    & span {
+      display: block;
+      color: lighten(#2d2a2a, 40%) ;
+      font-size: 11px;
+    }
 
     &:hover {
       text-decoration: none;
@@ -145,10 +155,14 @@
       top: 30px;
     }
 
-    &__phone {
+    &__info {
       position: absolute;
-      right: 20%;
-      top: 30px;
+      right: 17%;
+      top: 35px;
+
+      & a {
+        font-size: 15px;
+      }
     }
 
   }
