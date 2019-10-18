@@ -3400,6 +3400,7 @@ button:focus ~ .field-num__input {
 table {
   width: 100%;
   table-layout: fixed;
+  border-collapse: collapse;
 }
 
 .tbl-header {
@@ -3475,6 +3476,27 @@ tbody {
 
 .th--highlighted:hover {
   text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+  .tbl-header th {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  td {
+    font-size: 12px;
+  }
+  .tbl-header th {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 540px) {
+  .table-wrapper {
+    display: none;
+  }
 }
 
 .delivery {
