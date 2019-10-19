@@ -2982,7 +2982,7 @@ button:focus ~ .field-num__input {
   display: block;
   color: #2d2a2a;
   margin: 0;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   font-weight: bold;
 }
 
@@ -2999,6 +2999,60 @@ button:focus ~ .field-num__input {
   margin-top: 15px;
   padding: 20px;
   background: #f4f0f0;
+}
+
+.cart-success {
+  display: none;
+}
+
+.cart-success__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.cart-success__icon {
+  margin: auto;
+}
+
+.cart-success__title {
+  display: block;
+  color: #433f3f;
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin: 20px 0px;
+}
+
+.cart-success__info {
+  color: #433f3f;
+  font-size: 1.8rem;
+}
+
+.cart-success__link-to {
+  color: #f69b2a;
+}
+
+.cart-success__link-to:hover {
+  color: #ee8606;
+}
+
+@media (max-width: 410px) {
+  .cart-success__title {
+    font-size: 2.6rem;
+  }
+  .cart-success__subtitle {
+    font-size: 1.6rem;
+  }
 }
 
 .cart-form {

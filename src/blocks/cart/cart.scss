@@ -12,7 +12,7 @@
     display: block;
     color: #2d2a2a;
     margin: 0;
-    font-size: 3.2rem;
+    font-size: 2.4rem;
     font-weight: bold;
   }
 
@@ -29,6 +29,56 @@
     margin-top: 15px;
     padding: 20px;
     background: $colorBackground;
+  }
+
+  &-success {
+    display: none; 
+    
+    &__inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      max-width: 540px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    &__icon {
+      margin: auto;
+    }
+    
+    &__title {
+      display: block;
+      color: $colorTitle;
+      font-size: 2.4rem;
+      font-weight: 700;
+      margin: 20px 0px;
+    }
+
+    &__info {
+      color: #433f3f;
+      font-size: 1.8rem;
+    }
+
+    &__link-to {
+      color: $colorPrimery;
+
+      &:hover {
+        color: #ee8606;
+      }
+    }
+
+  @media (max-width: 410px) {
+    &__title {
+      font-size: 2.6rem;
+      
+    }
+
+    &__subtitle {
+      font-size: 1.6rem;
+
+    }
+  }
   }
 
   &-form {
