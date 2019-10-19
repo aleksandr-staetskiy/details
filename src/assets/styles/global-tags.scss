@@ -185,6 +185,37 @@ a {
     text-decoration: none;
   }
 }
+
+.transitions {
+
+  &__list {
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+
+    &-link {
+      display: block;
+      color: $black;
+      margin-right: 15px;
+      padding: 20px;
+      border-radius: 5px;
+      border: 1px solid rgba(222, 222, 222, 0.66);
+      background-color: #ffffff;
+      transition: .3s ease;
+      &:hover {
+        text-decoration: none;
+        color: $colorPrimery;
+        border: 1px solid $colorPrimery;
+      }
+    }
+
+
+  }
+}
   
 
 
