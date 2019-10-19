@@ -1,0 +1,14 @@
+.not-found {
+  text-align: center;
+
+  &__pattern {
+    color: #2d2a2a;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &__info {
+    color: #433f3f;
+    font-size: 16px;
+  }
+}

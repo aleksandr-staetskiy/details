@@ -35,9 +35,9 @@
                         </nav>
                         <span class="page-header__street">Старо-Петергофский пр, д. 20, к. 3</span>
                         <span class="page-header__address">1-й Верхний переулок, д.10</span>
-                        <div href="tel:+78129624200" class="page-header__info">
-                            <a href="">+7 (812) 962-42-00</a>
-                            <span>с 10 до 20 ч. с Пн-СБ</span>
+                        <div class="page-header__info">
+                            <a href="tel:+78129624200">+7 (812) 962-42-00</a>
+                            <span>10-20 Пн-Сб</span>
                         </div>
                     </div>
 
@@ -283,16 +283,24 @@
                         <div class="search">
                             <img src="./img/car-icon.jpg" alt="" class="search__icon">
                             <input type="text" class="search__input " placeholder="Введите марку и или модель автомобиля">
-                            <button class="btn search__btn"> найти </button>
+                            <button class="btn search__btn certain-type"> найти </button>
+                        </div>
+                    </div>
+                    <div class="certain-type__not-found">
+                        <div class="not-found">
+                            <div class="not-found__pattern">« влоарыв »</div>
+                            <div class="not-found__informer">
+                                По этой марке или модели автомобиля информации не найдено
+                            </div>
                         </div>
                     </div>
 
                     <div class="grid certain-type__grid">
                         <div class="grid__col grid__col--6  grid__col--tablet-4 grid__col--desktopSmall-3">
-                            <div class="certain-type__brand">
+                            <a href class="certain-type__brand">
                                 <span class="certain-type__brand-icon" style="background: url(../../img/acura.png);"></span>
-                                <span class="certain-type__brand-name">ACURA</span>
-                            </div>
+                                <span class="certain-type__brand-name">ACURA </span>
+                            </a>
                         </div>
 
                         <div class="grid__col grid__col--6  grid__col--tablet-4 grid__col--desktopSmall-3">
@@ -403,200 +411,204 @@
                     </div>
                 </section>
 
+            </div>
+        </div>
+    </main>
 
-                <footer class="page-footer">
-                    <div class="page-footer__container">
-                        <div class="page-footer__wrap">
-                            <a class="page-footer__logo">
-                                <img src="./img/logo.png" alt="" class="page-footer__logo-icon">
-                                <p class="page-footer__logo-descr">
-                                    Запасные части для автоматических трансмиссий
-                                </p>
-                            </a>
-                            <div class="page-footer__nav">
-                                <nav class="page-nav">
-                                    <ul class="page-nav__list">
-                                        <li class="page-nav__list-item"><a href="catalogue.html" class="page-nav__list-link">Каталог</a></li>
-                                        <li class="page-nav__list-item"><a href="" class="page-nav__list-link">Доставка</a></li>
-                                        <li class="page-nav__list-item"><a href="" class="page-nav__list-link">Гарантия</a></li>
-                                        <li class="page-nav__list-item"><a href="" class="page-nav__list-link">Контакты</a></li>
-                                        <li class="page-nav__list-item"><a href="news-list.html" class="page-nav__list-link">Новости</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
 
-                            <div class="page-footer__info">
-                                <a href="tel:+78129624200" class="page-footer__phone">+7 (812) 962-42-00</a>
-                                <span class="page-footer__schedule">с 10 до 20 ч. с Пн-СБ</span>
-                            </div>
-                        </div>
-                        <div class="page-footer__wrap">
-                            <a href="" class="page-footer__policy">Политика конфеденциальности</a>
-                            <div class="page-footer__location">
-                                <span>Старо-Петергофский пр, 20, к. 3</span>
-                                <span>1-й Верхний переулок, 10</span>
-                            </div>
+    <footer class="page-footer">
+        <div class="page-footer__container">
+            <div class="page-footer__wrap">
+                <a class="page-footer__logo">
+                    <img src="./img/logo.png" alt="" class="page-footer__logo-icon">
+                    <p class="page-footer__logo-descr">
+                        Запасные части для автоматических трансмиссий
+                    </p>
+                </a>
+                <div class="page-footer__nav">
+                    <nav class="page-nav">
+                        <ul class="page-nav__list">
+                            <li class="page-nav__list-item"><a href="catalogue.html" class="page-nav__list-link">Каталог</a></li>
+                            <li class="page-nav__list-item"><a href="" class="page-nav__list-link">Доставка</a></li>
+                            <li class="page-nav__list-item"><a href="" class="page-nav__list-link">Гарантия</a></li>
+                            <li class="page-nav__list-item"><a href="" class="page-nav__list-link">Контакты</a></li>
+                            <li class="page-nav__list-item"><a href="news-list.html" class="page-nav__list-link">Новости</a></li>
+                        </ul>
+                    </nav>
+                </div>
 
-                            <div class="page-footer__social">
-                                <a href="" class="page-footer__social-circle">
-                                    <img src="./img/fb.png" alt="inst" class="page-footer__social-icon">
-                                </a>
-                                <a href="" class="page-footer__social-circle">
-                                    <img src="./img/inst.png" alt="fb" class="page-footer__social-icon">
-                                </a>
-                                <a href="" class="page-footer__social-circle">
-                                    <img src="./img/twitter.png" alt="twitter" class="page-footer__social-icon">
-                                </a>
-                            </div>
+                <div class="page-footer__info">
+                    <a href="tel:+78129624200" class="page-footer__phone">+7 (812) 962-42-00</a>
+                    <span class="page-footer__schedule">с 10 до 20 ч. с Пн-СБ</span>
+                </div>
+            </div>
+            <div class="page-footer__wrap">
+                <a href="" class="page-footer__policy">Политика конфеденциальности</a>
+                <div class="page-footer__location">
+                    <span>Старо-Петергофский пр, 20, к. 3</span>
+                    <span>1-й Верхний переулок, 10</span>
+                </div>
 
-                            <div class="page-footer__creater">
-                                <span class="page-footer__creater-overview">Создание и продвижение</span>
-                                <a href="" class="page-footer__creater-name">MAKEIT</a>
-                            </div>
+                <div class="page-footer__social">
+                    <a href="" class="page-footer__social-circle">
+                        <img src="./img/fb.png" alt="inst" class="page-footer__social-icon">
+                    </a>
+                    <a href="" class="page-footer__social-circle">
+                        <img src="./img/inst.png" alt="fb" class="page-footer__social-icon">
+                    </a>
+                    <a href="" class="page-footer__social-circle">
+                        <img src="./img/twitter.png" alt="twitter" class="page-footer__social-icon">
+                    </a>
+                </div>
 
-                            <a href="mailto:info@piterakpp.com" class="page-footer__mail">info@piterakpp.com</a>
+                <div class="page-footer__creater">
+                    <span class="page-footer__creater-overview">Создание и продвижение</span>
+                    <a href="" class="page-footer__creater-name">MAKEIT</a>
+                </div>
+
+                <a href="mailto:info@piterakpp.com" class="page-footer__mail">info@piterakpp.com</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <div class="modal modal--grey" id="modal-cart" tabindex="-1" role="dialog">
+        <div class="modal__dialog" role="document">
+            <div class="modal__content modal__content--grey">
+                <div class="modal__header">
+                    <span class="close modal__close" data-dismiss="modal" aria-label="Закрыть">
+              <span></span>
+                    </span>
+                    <a class="modal__phone" href="tel:+78129624200">+7 (812) 962-42-00</a>
+                    <span class="modal__schedule">10-20 Пн-Сб</span>
+                </div>
+                <div class="modal__body">
+                    <div class="cart">
+                        <div class="cart__inner">
+                            <header class="cart__header">
+                                <span class="cart__title">Корзина</span>
+                                <span class="cart__clear-all">Очистить</span>
+                            </header>
                         </div>
                     </div>
-                </footer>
-
-
-
-                <div class="modal modal--grey" id="modal-cart" tabindex="-1" role="dialog">
-                    <div class="modal__dialog" role="document">
-                        <div class="modal__content modal__content--grey">
-                            <div class="modal__header">
-                                <span class="close modal__close" data-dismiss="modal" aria-label="Закрыть">
-              <span></span>
-                                </span>
-                                <a class="modal__phone" href="tel:+78129624200">+7 (812) 962-42-00</a>
-                                <span class="modal__schedule">10-20 Пн-Сб</span>
+                    <div class="product">
+                        <div class="product__row">
+                            <div class="product__photo">
+                                <span class="product__head">Фото</span>
                             </div>
-                            <div class="modal__body">
-                                <div class="cart">
-                                    <div class="cart__inner">
-                                        <header class="cart__header">
-                                            <span class="cart__title">Корзина</span>
-                                            <span class="cart__clear-all">Очистить</span>
-                                        </header>
-                                    </div>
-                                </div>
-                                <div class="product">
-                                    <div class="product__row">
-                                        <div class="product__photo">
-                                            <span class="product__head">Фото</span>
-                                        </div>
-                                        <div class="product__article">
-                                            <span class="product__head">Артикул</span>
-                                        </div>
-                                        <div class="product__name">
-                                            <span class="product__head">Название</span>
-                                        </div>
-                                        <div class="product__producer">
-                                            <span class="product__head">Производитель</span>
-                                        </div>
-                                        <div class="product__amount">
-                                            <span class="product__head">Количество</span>
-                                        </div>
-                                        <div class="product__availability">
-                                            <span class="product__head">Наличие</span>
-                                        </div>
-                                        <div class="product__to-cart"></div>
-                                    </div>
-                                </div>
+                            <div class="product__article">
+                                <span class="product__head">Артикул</span>
+                            </div>
+                            <div class="product__name">
+                                <span class="product__head">Название</span>
+                            </div>
+                            <div class="product__producer">
+                                <span class="product__head">Производитель</span>
+                            </div>
+                            <div class="product__amount">
+                                <span class="product__head">Количество</span>
+                            </div>
+                            <div class="product__availability">
+                                <span class="product__head">Наличие</span>
+                            </div>
+                            <div class="product__to-cart"></div>
+                        </div>
+                    </div>
 
-                                <div class="product">
-                                    <div class="product__row">
-                                        <div class="product__photo">
-                                            <img src="./img/transmition-photo.jpg" alt="transmition photo">
-                                        </div>
-                                        <div class="product__article">46800B</div>
-                                        <div class="product__name">Масляный фильтр</div>
-                                        <div class="product__producer">AFTERMARKET</div>
-                                        <div class="product__amount">
-                                            <div class="field-num  field-num--bg-tran">
-                                                <span class="field-num__input-wrap">
+                    <div class="product">
+                        <div class="product__row">
+                            <div class="product__photo">
+                                <img src="./img/transmition-photo.jpg" alt="transmition photo">
+                            </div>
+                            <div class="product__article">46800B</div>
+                            <div class="product__name">Масляный фильтр</div>
+                            <div class="product__producer">AFTERMARKET</div>
+                            <div class="product__amount">
+                                <div class="field-num  field-num--bg-tran">
+                                    <span class="field-num__input-wrap">
                       <button class="field-num__btn-minus" type="button">-</button>
                       <input class="field-num__input" type="number" value="0" step="1" min="1"/>
                       <button class="field-num__btn-plus" type="button">+</button>
                     </span>
-                                            </div>
-                                        </div>
+                                </div>
+                            </div>
+                            <div class="product__availability">
+                                <span class="product__available">В наличии</span>
+                            </div>
+                            <div class="product__to-cart">
+                                <div class="cart__closer"></div>
+                            </div>
+                        </div>
+
+                        <div class="product__mobile">
+                            <div class="product__mobile-img">
+                                <img src="./img/transmition-photo.jpg" alt="transmition photo">
+                            </div>
+
+                            <div class="product__mobile-wrap">
+                                <div class="product__mobile-item product__mobile-item--lg">
+                                    <div class="product__mobile-name">
+                                        Артикул:
+                                        <span class="product__article">46800B</span>
+                                    </div>
+                                    <div class="product__mobile-name">
+                                        Название:
+                                        <span class="product__name">Масляный фильтр</span>
+                                    </div>
+                                    <div class="flex-wrap">
                                         <div class="product__availability">
                                             <span class="product__available">В наличии</span>
                                         </div>
-                                        <div class="product__to-cart">
-                                            <div class="cart__closer"></div>
-                                        </div>
-                                    </div>
-
-                                    <div class="product__mobile">
-                                        <div class="product__mobile-img">
-                                            <img src="./img/transmition-photo.jpg" alt="transmition photo">
-                                        </div>
-
-                                        <div class="product__mobile-wrap">
-                                            <div class="product__mobile-item product__mobile-item--lg">
-                                                <div class="product__mobile-name">
-                                                    Артикул:
-                                                    <span class="product__article">46800B</span>
-                                                </div>
-                                                <div class="product__mobile-name">
-                                                    Название:
-                                                    <span class="product__name">Масляный фильтр</span>
-                                                </div>
-                                                <div class="flex-wrap">
-                                                    <div class="product__availability">
-                                                        <span class="product__available">В наличии</span>
-                                                    </div>
-                                                    <div class="product__amount">
-                                                        <div class="field-num  field-num--bg-tran">
-                                                            <span class="field-num__input-wrap">
+                                        <div class="product__amount">
+                                            <div class="field-num  field-num--bg-tran">
+                                                <span class="field-num__input-wrap">
                             <button class="field-num__btn-minus" type="button">-</button>
                             <input class="field-num__input" type="number" value="0" step="1" min="1"/>
                             <button class="field-num__btn-plus" type="button">+</button>
                           </span>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
                                             </div>
-
-                                            <div class="product__mobile-item">
-                                                <div class="product__mobile-name">
-                                                    Производитель:
-                                                    <span class="product__article">46800B</span>
-                                                </div>
-                                                <div class="product__mobile-name">
-                                                    Тех. номер:
-                                                    <span class="product__tech-number">57010E</span>
-                                                </div>
-                                            </div>
-
                                         </div>
+
                                     </div>
                                 </div>
 
-                                <div class="cart__order">
-                                    <form action="" class="cart-form">
-                                        <div class="cart-form__wrap">
-                                            <input type="text" class="cart-form__input">
-                                        </div>
-                                        <div class="cart-form__wrap">
-                                            <input type="text" class="cart-form__input">
-                                        </div>
-                                        <div class="cart-form__wrap">
-                                            <button class="btn cart-form__btn">Оформить заказ</button>
-                                        </div>
-                                    </form>
+                                <div class="product__mobile-item">
+                                    <div class="product__mobile-name">
+                                        Производитель:
+                                        <span class="product__article">46800B</span>
+                                    </div>
+                                    <div class="product__mobile-name">
+                                        Тех. номер:
+                                        <span class="product__tech-number">57010E</span>
+                                    </div>
                                 </div>
 
                             </div>
                         </div>
                     </div>
+
+                    <div class="cart__order">
+                        <form action="" class="cart-form">
+                            <div class="cart-form__wrap">
+                                <input type="text" class="cart-form__input">
+                            </div>
+                            <div class="cart-form__wrap">
+                                <input type="text" class="cart-form__input">
+                            </div>
+                            <div class="cart-form__wrap">
+                                <button class="btn cart-form__btn">Оформить заказ</button>
+                            </div>
+                        </form>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+    </div>
 
 
-                <script src="./scripts/app.js"></script>
+    <script src="./scripts/app.js"></script>
 </body>
 
 </html>

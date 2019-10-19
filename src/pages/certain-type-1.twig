@@ -30,18 +30,26 @@
                   icon_class: "search__icon",
                   icon: "./img/car-icon.jpg",
                   txt: "найти",
-                  btn_classes: "search__btn",
+                  btn_classes: "search__btn certain-type",
                   placeholder: "Введите марку и или модель автомобиля"
                   }
                   %}
             </div>
+            <div class="certain-type__not-found">
+                <div class="not-found">
+                    <div class="not-found__pattern">« влоарыв »</div>
+                    <div class="not-found__informer">
+                        По этой марке или модели автомобиля информации не найдено
+                    </div>
+                  </div>
+            </div>
 
             <div class="grid certain-type__grid">
               <div class="grid__col grid__col--6  grid__col--tablet-4 grid__col--desktopSmall-3">
-                <div class="certain-type__brand">
+                <a href class="certain-type__brand">
                   <span class="certain-type__brand-icon" style="background: url(../../img/acura.png);"></span>
-                  <span class="certain-type__brand-name">ACURA</span>
-                </div>
+                  <span class="certain-type__brand-name">ACURA </span>
+                </a>
               </div>
 
               <div class="grid__col grid__col--6  grid__col--tablet-4 grid__col--desktopSmall-3">
@@ -151,6 +159,10 @@
 
             </div>
           </section>
+
+          </div>
+      </div>
+  </main>
 
 
       {% include '../blocks/footer/footer.twig' %}
