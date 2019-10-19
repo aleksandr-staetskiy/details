@@ -1,0 +1,43 @@
+.page-error {
+
+  &__inner  {
+     max-width: 500px;
+     margin: 0 auto;
+     text-align: center;
+  }
+
+  &__title {
+    color: $colorTitle;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 15px 0px;
+  }
+
+  &__subtitle {
+    color: #433f3f;
+    width: 277px;
+    font-size: 1.8rem;
+    margin: 0 auto;
+  }
+
+  &__link-to {
+    color: $colorPrimery;
+
+    &:hover {
+      color: #ee8606;
+    }
+  }
+
+  @media (max-width: 410px) {
+    &__title {
+      font-size: 2.6rem;
+      
+    }
+
+    &__subtitle {
+      font-size: 1.6rem;
+
+    }
+  }
+ 
+}

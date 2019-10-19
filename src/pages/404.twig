@@ -1,11 +1,35 @@
-{# {% include './layout/head.twig' with {
-    title: 'Страница не найдена 404',
-    meta_d: '404',
-    theme_color: '#FFFFFF'
-}%} #}
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>404</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	 {% include '../blocks/header/main_header.twig' %}
 
 
-<h1>404</h1>
 
+	<main class="main">
+		<div class="main__container">
+			<div class="main__content">
+				<div class="page-error">
+                    <div class="page-error__inner">
+                        <img src="./img/404.png" alt="" class="page-error__icon">
+                        <h1 class="page-error__title">Страница не найдена</h1>
+                        <div class="page-error__subtitle">
+                            <p>Проверьте адрес или перейдите
+                                на <a href="" class="page-error__link-to">главную страницу</a></p>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</main>
 
-{# {% include './layout/footer.twig' %} #}
+	{% include '../blocks/footer/footer.twig' %}
+
