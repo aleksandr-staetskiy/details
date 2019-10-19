@@ -3852,4 +3852,31 @@ tbody {
   }
 }
 
+.garanty {
+  max-width: 600px;
+}
+
+.garanty ul {
+  color: #433f3f;
+  list-style: none;
+  padding-left: 7px;
+  font-size: 1.6rem;
+}
+
+.garanty ul li {
+  margin-top: 15px;
+}
+
+.garanty li::before {
+  content: '-';
+  color: #000;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.garanty p {
+  color: #433f3f;
+  font-size: 1.6rem;
+}
+
 /*# sourceMappingURL=app.css.map */

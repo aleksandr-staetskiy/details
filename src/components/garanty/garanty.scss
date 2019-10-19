@@ -1,0 +1,24 @@
+.garanty {
+  max-width: 600px;
+  & ul {
+    color: #433f3f;
+    list-style: none;
+    padding-left: 7px;
+    font-size: 1.6rem;
+    & li {
+      margin-top: 15px;
+    }
+  }
+
+  & li::before {
+    content: '-';
+    color: #000;
+    font-size: 20px;
+    margin-right: 10px;
+  }
+
+  & p {
+    color: #433f3f;
+    font-size: 1.6rem;
+  }
+}
