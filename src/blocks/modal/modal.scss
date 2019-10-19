@@ -81,13 +81,54 @@
 
   &__close {
     position: absolute !important; 
-    top: 15px;
+    top: 0px;
     right: 5px;
-    width: 35px;
-    height: 35px;
-    & span {
-      margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 30px;
+    border: none;
+    padding: 0;
+    line-height: 30px;
+    background: transparent;
+    user-select: none;
+    cursor: pointer;
+
+    span {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      height: $toggler-part-height;
+      vertical-align: middle;
+      font-size: 0;
+      color: transparent;
+      background: transparent;
+
+      &:before,
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: $toggler-part-height;
+        background: $toggler-part-bg-color;
+        transform-origin: 50% 50%;
+      }
+
+      &:before {
+        transform: rotate3d(0, 0, 1, 45deg);
+      }
+
+      &:after {
+        transform: rotate3d(0, 0, 1, -45deg);
+      }
     }
+      & span {
+        margin-top: 15px;
+      }
   }
 
   &__body {
@@ -142,11 +183,17 @@
   }
 
   @media (max-width: 765px) {
+
+    &{
+      flex-direction: column;
+    }
     
     &__content {
       padding: 5px;
     }
   }
+
+
 }
 
 
