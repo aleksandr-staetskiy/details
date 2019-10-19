@@ -6,7 +6,6 @@
     color: $gray;
     font-size: 3.2rem;
     font-weight: 700;
-    font-family: 'Clear Sans Bold';
     margin: 0;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -24,8 +23,12 @@
     margin-bottom: 25px;
   }
 
-  p {
+  &__lead {
     color: #433f3f;
+    font-size: 1.8rem;
+  }
+
+  &__content {
     font-size: 1.6rem;
   }
 }
