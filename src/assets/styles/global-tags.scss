@@ -103,6 +103,15 @@ img {
             padding: 20px;
         }
     }
+
+    @media (max-width: 376px) {
+      &__content {
+
+        &::before{
+            width: 86%;
+        }
+    }
+    }
 }
 
 .сome-back {

@@ -323,6 +323,12 @@ img {
   }
 }
 
+@media (max-width: 376px) {
+  .main__content::before {
+    width: 86%;
+  }
+}
+
 .сome-back {
   position: relative;
   color: #433f3f;
@@ -801,6 +807,7 @@ a:hover {
   -webkit-transition: .4s ease;
   -o-transition: .4s ease;
   transition: .4s ease;
+  padding-bottom: 5px;
 }
 
 .page-nav__list-link:hover {
@@ -2326,17 +2333,23 @@ a:hover {
 .news-list__date {
   color: #433f3f;
   font-size: 1.6rem;
+  line-height: 2.1rem;
 }
 
 .news-list__title {
   margin: 0;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 2.4rem;
+  line-height: 2.7rem;
+  margin-top: 5px;
 }
 
 .news-list__descr {
+  display: block;
+  color: #433F3F;
   font-size: 1.6rem;
+  line-height: 2.1rem;
+  margin-top: 5px;
 }
 
 .news-list__buttons-group {
@@ -2354,6 +2367,7 @@ a:hover {
   padding: 1.2rem;
   font-size: 1.6rem;
   letter-spacing: 0.2px;
+  text-align: center;
   border-radius: 5px;
   border: 1px solid rgba(222, 222, 222, 0.66);
   background: transparent;
@@ -4223,7 +4237,7 @@ tbody {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  background: url(../../img/map-pin@2x.png);
+  background: url(../img/map-pin@2x.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -4250,7 +4264,7 @@ tbody {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  background: url(../../img/phone@2x.png);
+  background: url(../img/phone@2x.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -4275,7 +4289,7 @@ tbody {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  background: url(../../img/mail@2x.png);
+  background: url(../img/mail@2x.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -4301,7 +4315,7 @@ tbody {
   width: 24px;
   height: 24px;
   margin-right: 10px;
-  background: url(../../img/clock@2x.png);
+  background: url(../img/clock@2x.png);
   background-repeat: no-repeat;
   background-size: contain;
 }
