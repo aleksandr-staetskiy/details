@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Каталог</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+    {% include '../blocks/header/main_header.twig' %}
+
+    <main class="main">
+        <div class="main__container">
+          <div class="main__content">
+            <div class="contacts">
+              <h1 class="contacts__title">Контакты</h1>
+              <div class="grid">
+                <div class="grid__col grid__col--6">
+                  <div class="grid">
+                    <div class="grid__col grid__col--12">
+                      <div class="contacts__city">
+                        <p>Санкт-Петербург</p>
+                      </div>
+                      <div class="contacts__address">
+                        <span>Старо-Петергофский проспект, 20 к. 3</span>
+                        <span>1 Верхний переулок</span>
+                      </div>
+                    </div>
+                    <div class="grid__col grid__col--12">
+                      <div class="contacts__phone">
+                        <a href="tel:+78129624200">+7 (812) 962-42-00</a>
+                      </div>
+      
+                      <div class="contacts__email">
+                        <a href="mailto:exmp@re">info@piterakpp.com</a>
+                      </div>
+                      <div class="contacts__schedule">
+                        <p>Пн-Пт: 09:00 - 17:30 без обеда</p>
+                        <p>Сб, Вс: выходные</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid__col grid__col--6">
+                  <iframe src="https://yandex.ru/map-widget/v1/-/CGDfrPm8" width="100%" height="300" frameborder="1"
+                    allowfullscreen="true"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+
+      {% include '../blocks/footer/footer.twig' %}

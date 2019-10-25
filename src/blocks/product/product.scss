@@ -2,6 +2,8 @@
 	cursor: pointer;
   margin-top: 7px;
   background: $white;
+  word-wrap: break-word;
+  
 	&:hover:not(:first-child) {
 		box-shadow: 0 1px 12px rgba(141, 123, 123, 0.11);
   }

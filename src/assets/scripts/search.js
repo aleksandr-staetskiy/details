@@ -1,3 +1,6 @@
+
+document.addEventListener("DOMContentLoaded", () => {
+  
 const input         =  document.querySelector('.search__input ');
 const searchResult  =  document.querySelector('.search-dropdown');
 const btn           =  document.querySelector('.btn');
@@ -27,10 +30,5 @@ const search        =  document.querySelector('.page-header__search');
   function showPageSearch() {
     searchResult.style.display = "block";
   }
-
-
   
-
-
-  console.log('it works bitch');
-  
+});

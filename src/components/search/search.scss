@@ -33,6 +33,12 @@
     border-right: 1px solid #d1d8df;
   }
 
+  @media (max-width: 1199px) {
+    &{
+     width: 608px;
+    }
+  }
+
   @media (max-width: 1000px) {
     &{
      max-width: 320px;
@@ -43,6 +49,10 @@
   @media (max-width: $screen-md) {
     &__icon{
     display: none;
+    }
+
+    &__btn {
+      font-size: 15px;
     }
   }
 

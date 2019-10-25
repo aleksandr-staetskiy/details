@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", () => {
+
 
 function orderedAccordion() {
 
@@ -44,3 +46,5 @@ function orderedAccordion() {
 }
 
 orderedAccordion();
+
+});

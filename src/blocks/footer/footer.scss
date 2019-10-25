@@ -1,6 +1,7 @@
 .page-footer {
   padding-top: 15px;
   padding-bottom: 22px;
+  margin-top: 40px;
 
   &__container {
     position: relative;
@@ -252,7 +253,7 @@
     &__info {
       width: 250px; 
       position: absolute;
-      top: 45px;
+      top: 50px;
       left: 32%;
     }
 

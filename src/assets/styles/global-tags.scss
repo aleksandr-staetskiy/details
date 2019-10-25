@@ -202,6 +202,7 @@ a {
       color: $black;
       margin-right: 15px;
       padding: 20px;
+      margin-bottom: 15px;
       border-radius: 5px;
       border: 1px solid rgba(222, 222, 222, 0.66);
       background-color: #ffffff;
@@ -213,8 +214,25 @@ a {
       }
     }
 
+    @media (max-width: 760px) {
+      &-link {
+        padding: 15px; 
+      }
+    }
 
   }
+
+}
+
+
+.fancybox-content {
+  max-width: 944px!important;
+  padding: 15px;
+  padding-top: 25px;
+}
+
+.burger {
+  flex-shrink: 0;
 }
   
 

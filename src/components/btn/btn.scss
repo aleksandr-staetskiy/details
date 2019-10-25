@@ -6,4 +6,17 @@
   border: none;
   background-color: #f69b2a;
   cursor: pointer;
+
+  &--show-me-more {
+    display: block;
+    color: #fff;
+    height: auto;
+    border: none;
+    background-color: #f69b2a;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+    margin-top: 15px;
+  }
 }

@@ -1,0 +1,120 @@
+.contacts {
+  &__title {
+      color: #2D2A2A;
+      font-size: 3.2rem;
+      font-weight: bold;
+      line-height: 43px;
+      margin-bottom: 23px;
+      margin-top: 0;
+  }
+
+  &__city {
+    color: #262626;	
+    font-size: 2rem;
+    line-height: 2.7rem;
+    p {
+      margin: 0;
+    }
+  }
+
+  &__address {
+    position: relative;
+    color: #262626;		
+    font-size: 20px;	
+    line-height: 27px;
+    & span {
+      display: block;
+      margin: 0;
+      margin-top: 12px;
+      padding-left: 40px;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        background: url(../../img/map-pin@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__phone {
+    position: relative;
+    color: #262626;
+    font-size: 20px;	
+    font-weight: bold;	
+    line-height: 27px;
+    padding-left: 40px;
+    margin-top: 23px;
+
+    a {
+      display: block;
+      margin-top: 23px;
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        background: url(../../img/phone@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__email {
+    position: relative;
+    color: #433F3F;	
+    font-size: 16px;	
+    line-height: 21px;
+    padding-left: 40px;
+    
+    a {
+      display: block;
+      margin-top: 24px;
+
+      &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        width: 24px;
+        height: 24px;
+        margin-right: 10px;
+        background: url(../../img/mail@2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+
+  &__schedule {
+    position: relative;
+    color: #433F3F;		
+    font-size: 16px;	
+    line-height: 24px;
+    margin-top: 24px;
+    padding-left: 40px;
+
+    & P {
+      margin: 0;
+      margin-top: 5px;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+      background: url(../../img/clock@2x.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}

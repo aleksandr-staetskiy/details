@@ -48,7 +48,7 @@
     &-visible {
       display: flex;
       align-items: center;
-      margin-bottom: 25px;
+      margin-top: 15px;
       // &::after {
       //   content: '';
       //   display: block;
@@ -97,6 +97,7 @@
       display: flex;
       align-items: center;
       max-width: 600px;
+      overflow: hidden;
     }
 
   }
