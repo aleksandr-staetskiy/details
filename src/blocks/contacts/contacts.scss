@@ -117,4 +117,42 @@
       background-size: contain;
     }
   }
+
+  @media (max-width: 768px) {
+    &__title {
+      font-size: 2.6rem;
+      line-height: 3.5rem;
+      margin-bottom: 19px;
+    }
+
+    &__city {
+      font-size: 1.8rem;	
+      line-height: 2.4rem;
+    }
+
+    &__phone {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+
+    &__address {
+      font-size: 1.8rem;
+      line-height: 2.4rem;
+    }
+
+    &__email {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+
+    &__schedule {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+    }
+
+    &__map {
+      margin-top: 32px;
+    }
+  }
+
 }
