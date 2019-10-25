@@ -176,6 +176,8 @@
       font-size: 1.4rem;
       display: flex;
       align-items: flex-start;
+      padding-top: 15px;
+      border-top: 1px solid #F3F3F3;
 
       &-img {
         width: 110px;
@@ -197,6 +199,11 @@
 
       &-name {
         margin-top: 10px;
+      }
+
+      &-close {
+        position: absolute;
+        right: 0;
       }
     }
 

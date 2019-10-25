@@ -25,6 +25,12 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     plusAmount();
+
+    
 });
+
+    window["minusAmount"] = minusAmount;
+
+    window["plusAmoun"] = plusAmount;
 
 
